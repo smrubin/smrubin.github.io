@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "8 Things I've Learned as a Web Developer"
+title:  "Six Things I've Learned as a Web Developer"
 date:   2016-03-09
 img: tools2.jpg
 ---

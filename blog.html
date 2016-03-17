@@ -19,7 +19,7 @@ title: Blog
                         {{post.title}}</a></h2>
                     <time itemprop="dateCreated" datetime="{{post.date}}">
                         {{post.date | date:"%B %-d, %Y"}}</time>
-                    <p>{{post.excerpt | strip_html}} <a href="{{site.baseurl}}{{post.url}}" title="read more" class="more">Read more</a></p>
+                    <p>{{post.excerpt | strip_html}} <a href="{{site.baseurl}}{{post.url}}" title="read more">Read more</a></p>
                 </div>
             </div>
         </article>

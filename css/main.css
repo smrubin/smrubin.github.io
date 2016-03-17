@@ -107,7 +107,7 @@ body {
     color: #fff !important;
     font-weight: bold;
 }
-section, #fun-fact, footer {
+section , footer {
     border-bottom: #dddddd solid 1px;
     padding: 2em 0;
     width: 100%;
@@ -186,6 +186,10 @@ section, #fun-fact, footer {
 
 
 #fun-fact {
+  border-bottom: #dddddd solid 1px;
+  font-size: 1.2em;
+  padding: 1em 0;
+  width: 100%;
 }
 footer {
     background-color: #f5f5f5;
