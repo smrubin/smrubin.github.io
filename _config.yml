@@ -10,7 +10,6 @@ title: Sam Rubin | Web Developer
 description: "The personal and professional website of Sam Rubin, a front end web developer."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-tagline: "A basic guide to Jekyll"
 
 # Build settings
 highlighter: rouge

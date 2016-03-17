@@ -117,6 +117,7 @@ section, #fun-fact, footer {
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
 }
 .section-header {
+  font-size: 1.2em;
   line-height: 0.5;
   text-align: center;
   width: 100%;
@@ -141,6 +142,12 @@ section, #fun-fact, footer {
 .section-header span:after {
   left: 100%;
   margin-left: 15px;
+}
+.more {
+  padding: 1em;
+  display: inline-block;
+  border: 2px solid;
+  border-radius: 5px;
 }
 
 /* About */
@@ -516,150 +523,3 @@ footer li {
     }
 }
 
-
-/* *****************************************************************************************************************************************************************
-Pulled from other main.css file */
-
-/* -------------------------------------------------- 
-   article styles
------------------------------------------------------*/
-.posts {
-  padding: 0 1em 0;
-}
-article header {
-  padding-bottom: 0.5em;
-  margin-bottom: 1em;
-  border-bottom: 1px solid #aaa;
-}
-article h2 {
-  font-size: 2em;
-  font-weight: 400;
-  line-height:1.2;
-  color: #42659A;
-  margin-bottom:0.2em;
-}
-article h3 {
-  font-weight: 400;
-  font-size: 1.4em;
-  color: #42659A;
-  margin-bottom: 0;
-}
-article h2 a {
-  text-decoration:none;
-}
-article time {
-  display: block;
-  font-size: 0.8em;
-  color: #666;
-  margin-bottom: 0;
-}
-a.more {
-  display: block;
-  text-align: right;
-}
-a.more:before {
-  content: '[';
-}
-a.more:after {
-  content: ']';
-}
-p code {
-  font-size: 1.2em;
-  font-weight: bold;
-}
-pre {
-  font-size: 1.4em;
-  line-height: 1.6;
-  color: white;
-  padding: .5em 1em;
-  margin-bottom: 1em;
-  border-left: 1em solid #42659A;
-  background: #666;
-  white-space: pre-wrap;
-  white-space: -moz-pre-wrap;
-  white-space: -pre-wrap;
-  white-space: -o-pre-wrap;
-  word-wrap: break-word;
-  width: 90%;
-}
-figcaption {
-  font-size: 0.9em;
-  font-style: italic;
-}
-blockquote {
-  font: 1.5em 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
-  font-weight: 400;
-  color: #6d6d6d;
-  padding-left: 1em;
-  margin: 1em 0;
-  border-left: 4px solid #6d6d6d;
-}
-cite {
-  display: block;
-  font-size: 0.8em;
-  margin-top: 0.5em;
-}
-article footer {
-  background: none;
-  border-top: 1px solid #aaa;
-  font-size: 0.8em;
-  padding: 1em 0;
-}
-dt {
-  font-family: 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
-  font-size: 1.2em;
-  font-weight: 400;
-  color: #42659A;
-  margin-bottom:0;
-}
-dd {
-  margin-bottom:1em;
-}
-
-/* -------------------------------------------------- 
-   Larger screen styles
------------------------------------------------------*/
-@media only screen and (min-width: 951px) {
-/* -------------------------------------------------- 
-   layout styles
------------------------------------------------------*/
-.page-header {
-  padding: 0 3%;
-  padding-top: 1em;
-}
-.posts {
-  float: right;
-  width: 70%;
-  padding-right: 2.5%;
-}
-aside {
-  float: left;
-  width: 30%;
-  max-width: 320px;
-  padding-top: 1em;
-  padding-left: 2.5%;
-}
-
-/* -------------------------------------------------- 
-   header styles
------------------------------------------------------*/
-header h1 {
-  font-size: 3em;
-}
-header p {
-  font: 1em 'Oswald', 'Helvetica Narrow', Arial, sans-serif;
-  font-weight: 400;
-  color: #666;
-  text-transform: uppercase;
-}
-/* -------------------------------------------------- 
-   article styles
------------------------------------------------------*/
-article p {
-  font-size: 1.125em;
-  line-height: 1.4;
-}
-a.more {
-  margin: 0.5em 0;
-}
-}
