@@ -95,7 +95,16 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* Overall Layout */
+@font-face {
+  font-family: 'proxima-nova';
+  src: url('/fonts/ProximaNovaAltRegular.otf');
+}
+@font-face {
+  font-family: 'adobe-garamond';
+  src: url('/fonts/AdobeGaramondProItalic.ttf');
+}
 body {
+    font-family: 'proxima-nova', sans-serif !important;
     width: 100%;
 }
 .container-fluid, .section-content {
@@ -106,6 +115,7 @@ body {
 .navbar * {
     color: #fff !important;
     font-weight: bold;
+    text-transform: uppercase;
 }
 section , footer {
     border-bottom: #dddddd solid 1px;
@@ -148,6 +158,10 @@ section , footer {
   display: inline-block;
   border: 2px solid;
   border-radius: 5px;
+}
+.page-header small {
+  font-family: 'adobe-garamond', sans-serif;
+  /*font-style: italic;*/
 }
 
 /* About */
