@@ -6,29 +6,31 @@ layout: default
 <section id="about">
     <div class="section-content">
         <h1 class="text-center">Hi there, I'm Sam.</h1>
-        <div class="row">
-            <div class="col-sm-5"><img src="{{site.baseurl}}/img/samrubin.jpg" alt="Sam Rubin" class="img-circle"></div>
-            <div class="col-sm-7">
-                <p class="text-l">I'm a Web Developer from Arlington, VA. Since creating my first website over 4 years ago, I've been hooked on designing and developing all things digital. I am a problem-solver at heart, and enjoy turning complex problems into simple and intuitive solutions. When I'm not coding, I'm tackling my <a href="{{site.baseurl}}/impossible-list.html">impossible list</a> or hanging out with Max, Dill, Coco, and Phil.</p>
-                <div class="row text-center">
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="{{site.baseurl}}/img/max.png" alt="Max">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-xs-12"><img src="{{site.baseurl}}/img/samrubin.jpg" alt="Sam Rubin" class="img-circle"></div>
+                <div class="col-md-7 col-xs-12">
+                    <p class="text-l">I'm a Web Developer from Arlington, VA. Since creating my first website over 4 years ago, I've been hooked on designing and developing all things digital. I am a problem-solver at heart, and enjoy turning complex problems into simple and intuitive solutions. When I'm not coding, I'm tackling my <a href="{{site.baseurl}}/impossible-list.html">impossible list</a> or hanging out with Max, Dill, Coco, and Phil.</p>
+                    <div class="row text-center">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="{{site.baseurl}}/img/max.png" alt="Max">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="{{site.baseurl}}/img/dill.png" alt="Dill">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="{{site.baseurl}}/img/dill.png" alt="Dill">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="{{site.baseurl}}/img/coco.jpg" alt="Coco">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="{{site.baseurl}}/img/coco.jpg" alt="Coco">
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3">
-                        <div class="thumbnail">
-                            <img src="{{site.baseurl}}/img/phil.jpg" alt="Phil">
+                        <div class="col-xs-6 col-sm-3">
+                            <div class="thumbnail">
+                                <img src="{{site.baseurl}}/img/phil.jpg" alt="Phil">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -41,24 +43,22 @@ layout: default
 <section id="portfolio" class="dark">
     <div class="section-content text-center">
         <div class="section-header mar-bottom"><span>SOME OF MY RECENT WORK</span></div>
-        <div class="row text-left mar-bottom">
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="{{site.baseurl}}/img/pro.png" alt="Federal Agency's Portal">
-                    <div class="caption">
-                        <h3>Federal Agency</h3>
-                        <p>Application Suite Landing Page Design and Development, Real-time Integration with Other Agency Applications, Guided Website Tour</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="{{site.baseurl}}/img/fasv-2.png" alt="Foot and Ankle Specialists of Virginia Website">
-                    <div class="caption">
-                        <h3>Foot and Ankle Specialists of Virginia</h3>
-                        <p>Website Design and Development, Online Appointment Request Form, Automated Alerts to Office Staff</p>
-                    </div>
-                </a>
+        <div class="container">
+            <div class="row text-left mar-bottom">
+
+                {% assign projects = site.projects %}
+                {% for project in projects %}
+                <div class="col-sm-6">
+                    <a href="{{site.baseurl}}{{project.url}}" class="thumbnail">
+                        <img src="{{site.baseurl}}/img/{{project.mainImg}}" alt="{{project.title}}">
+                        <div class="caption">
+                            <h3>{{project.title}}</h3>
+                            <p>{{project.intro}}</p>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
             </div>
         </div>
         <a class="more" href="{{site.baseurl}}/portfolio.html">See More</a>
@@ -69,24 +69,21 @@ layout: default
 <section id="blog" class="dark">
     <div class="section-content text-center">
         <div class="section-header mar-bottom"><span>BLOG</span></div>
-        <div class="row text-left">
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="{{site.baseurl}}/img/tools1.jpg" alt="">
-                    <div class="caption">
-                        <h3>Tools of a Front End Dev</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem commodi quis, atque labore, sapiente tempora temporibus, repellendus laboriosam sunt aut dolores laborum libero? Laudantium non enim, repellat recusandae quisquam aperiam.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6">
-                <a href="#" class="thumbnail">
-                    <img src="{{site.baseurl}}/img/tools2.jpg" alt="">
-                    <div class="caption">
-                        <h3>Starting Web Development</h3>
-                        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio vitae cum maiores nostrum eos velit ipsa quasi, assumenda consequuntur earum, minima sint sapiente ducimus. Sed numquam ad aut totam fugiat?</p>
-                    </div>
-                </a>
+        <div class="container">
+            <div class="row text-left">
+
+                {% for post in site.posts %}
+                <div class="col-sm-6">
+                    <a href="{{site.baseurl}}{{post.url}}" class="thumbnail">
+                        <img src="{{site.baseurl}}/img/{{post.img}}" alt="{{post.title}}">
+                        <div class="caption">
+                            <h3>{{post.title}}</h3>
+                            <time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+
             </div>
         </div>
         <a class="more" href="{{site.baseurl}}/blog.html">See More</a>

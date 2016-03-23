@@ -3,7 +3,7 @@ title: Foot and Ankle Specialists of Virginia
 tagline: Bringing a Local Podiatry Practice into the Digital Age
 timeline: October, 2015
 mainImg: fasv.png
-altImg: fasv-2.png
+altImg: fasv-3.png
 intro: Foot and Ankle Specialists of Virginia (FASV) was seeking to create a website and web presence for the first time. They wanted their website to be mobile-friendly and to grow the presence of their business online. Explore how the website I created for FASV exceeded their expectations, generated new patients, and reduced burden of office staff.
 ---
 
@@ -26,5 +26,5 @@ Foot and Ankle Specialists of Virginia (FASV), a podiatry practice located in Ri
 </div>
 <div class="mar-bottom">
 <h2>Results</h2>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore numquam, magnam quidem dolor nostrum modi consequuntur neque illum est aspernatur velit nulla! Pariatur fugit possimus blanditiis, ea consequatur doloremque deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque iste labore asperiores facere omnis error excepturi, fugit dignissimos, suscipit dolor perferendis debitis magni sed quia ab soluta voluptatum ea nisi.
+The launch and integration of the practice website and new business-technology practices were a great success. The website quickly jumped to the front of search engines for keywords that FASV was interested in. In its first year of launching, it has resulted in over a thousand page views and resulted in over 100 new patients completing an online appointment request form and making an appointment with the practice- creating a direct and measurable impact for the doctors. Furthermore, the front office staff now has a reduced burden of answering phone calls, due to the increased digital contact of potential patients.
 </div>

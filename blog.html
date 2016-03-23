@@ -10,16 +10,17 @@ title: Blog
         </div>
         {% for post in site.posts %}
         <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="row port-object">
-                <div class="col-md-4">
-                    <img class="img-resp" src="{{site.baseurl}}/img/{{post.img}}" alt="">
-                </div>
-                <div class="col-md-8">
-                    <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
-                    <time itemprop="dateCreated" datetime="{{post.date}}">
-                        {{post.date | date:"%B %-d, %Y"}}</time>
-                    <p>{{post.excerpt | strip_html}}</p>
-                    <a href="{{site.baseurl}}{{post.url}}" title="read more">Read more</a>
+            <div class="container">
+                <div class="row port-object">
+                    <div class="col-md-4">
+                        <img class="img-resp" src="{{site.baseurl}}/img/{{post.img}}" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
+                        <time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time>
+                        <p>{{post.excerpt | strip_html}}</p>
+                        <a href="{{site.baseurl}}{{post.url}}" title="read more">Read more</a>
+                    </div>
                 </div>
             </div>
         </article>

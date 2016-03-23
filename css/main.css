@@ -115,7 +115,7 @@ body {
 .navbar * {
     color: #fff !important;
     font-weight: bold;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 section , footer {
     border-bottom: #dddddd solid 1px;
@@ -172,7 +172,7 @@ section , footer {
     margin-top: 2em;
 }
 #about .thumbnail img {
-    height: 100px;
+    /*height: 100px;*/
 }
 .img-circle {
     border-radius: 50%;
@@ -184,6 +184,9 @@ section , footer {
 /* Portfolio */
 #portfolio a:hover, #blog a:hover {
     text-decoration: none;
+}
+#portfolio .thumbnail, #blog .thumbnail {
+  height: 475px;
 }
 
 /* Skils */
