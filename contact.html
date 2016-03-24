@@ -12,26 +12,29 @@ title: Contact
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <form role="form" action="https://formspree.io/sam.rubin@comcast.net" method="post" >
+                    <form id="contactForm" role="form" method="post" >
                         <div class="form-group">
-                            <label for="InputName">Your Name</label>
+                            <label for="name">Your Name</label>
                             <div class="input-group">
-                                <input type="text" class="form-control" name="InputName" size="60" id="InputName" placeholder="Enter Name" required>
+                                <input type="text" class="form-control" name="name" size="60" id="InputName" placeholder="Enter Name" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="InputEmail">Your Email</label>
+                            <label for="_replyto">Your Email</label>
                             <div class="input-group">
-                                <input type="email" class="form-control" id="InputEmail" name="InputEmail" size="60" placeholder="Enter Email" required>
+                                <input type="email" class="form-control" id="InputEmail" name="_replyto" size="60" placeholder="Enter Email" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="InputMessage">Message</label>
+                            <label for="message">Message</label>
                             <div class="input-group">
-                                <textarea name="InputMessage" id="InputMessage" class="form-control" cols="60" rows="5" required></textarea>
+                                <textarea name="message" id="InputMessage" class="form-control" cols="60" rows="5" required></textarea>
                             </div>
                         </div>
-                        <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info">
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <input type="submit" id="submit" value="Submit" class="btn btn-info">
+                        <input type="hidden" name="_subject" value="Thanks for Contacting Me!" />
+                        <input type="hidden" name="_next" value="{{site.baseurl}}/index.html" />
                     </form>
                 </div>
                 <div class="col-md-6">
@@ -51,3 +54,8 @@ title: Contact
         </div>
     </div>
 </section>
+
+<script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'sam.rubin' + '@' + 'comcast' + '.' + 'net');
+</script>
