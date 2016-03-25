@@ -42,21 +42,20 @@ layout: default
 <!-- portfolio overview -->
 <section id="portfolio" class="dark">
     <div class="section-content text-center">
-        <div class="section-header mar-bottom"><span>SOME OF MY RECENT WORK</span></div>
+        <div class="section-header mar-bottom"><span>Some of My Recent Work</span></div>
         <div class="container-fluid">
             <div class="row text-left mar-bottom">
 
                 {% assign projects = site.projects %}
                 {% for project in projects %}
                 <div class="col-sm-6">
-                    <a href="{{site.baseurl}}{{project.url}}" class="thumbnail">
+                    <div class="thumbnail">
                         <img src="{{site.baseurl}}/img/{{project.mainImg}}" alt="{{project.title}}">
                         <div class="caption">
                             <h3>{{project.title}}</h3>
-                            <p>{{project.intro}}</p>
-                            <a href="{{site.baseurl}}{{project.url}}" title="read more">Read more</a>
+                            <p>{{project.intro}}<br/><a href="{{site.baseurl}}{{project.url}}" title="read more" class="read-more">Read more</a></p>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 {% endfor %}
 
@@ -69,7 +68,7 @@ layout: default
 <!-- blog overview -->
 <section id="blog" class="dark">
     <div class="section-content text-center">
-        <div class="section-header mar-bottom"><span>BLOG</span></div>
+        <div class="section-header mar-bottom"><span>Check Out My Blog</span></div>
         <div class="container-fluid">
             <div class="row text-left">
 

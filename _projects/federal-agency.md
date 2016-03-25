@@ -8,7 +8,7 @@ intro: A U.S. Government Federal Agency was in need of a landing page and portal
 ---
 
 <div class="mar-bottom">
-<h2>Challenges</h2>
+<h2 class="article-title">Challenges</h2>
 A U.S. Government Federal Agency was deploying a financial application suite that encompassed several disparate box product systems. The agency desired a landing page and portal that provided a single point of entry into all of these systems. The landing page needed to be very intuitive and, in real-time, query and present data from the other systems' APIs. Finally, the client stakeholders required a consistent look, feel, and integration across the applications to make a seamless experience for the users. This integration proved especially challenging with the difficulties surrounding cross-origin resource sharing.
 </div>
 <div id="tools" class="mar-bottom">

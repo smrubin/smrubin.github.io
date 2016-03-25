@@ -124,7 +124,7 @@ body {
     font-weight: bold;
     /*text-transform: uppercase;*/
 }
-section , footer {
+section, footer {
     border-bottom: #dddddd solid 1px;
     padding: 2em 0;
     width: 100%;
@@ -331,7 +331,6 @@ footer li {
 
 /* Portfolio Page Specific */
 .port-object {
-    margin-top: 2em;
     margin-bottom: 2em;
 }
 
@@ -377,14 +376,24 @@ footer li {
 .pad-right {
     padding-right: 1em;
 }
+.read-more {
+  display: inline-block;
+  padding-top: 1em;
+}
 
 @media only screen and (min-width: 768px) {
   #portfolio .thumbnail, #blog .thumbnail {
-    height: 475px;
+    height: 500px;
   }
   #fun-fact, .section-content {
     padding-left: 0;
     padding-right: 0;
+  }
+  .article-title {
+    margin-top: 0;
+  }
+  .social {
+    margin-top: 3em;
   }
 }
 

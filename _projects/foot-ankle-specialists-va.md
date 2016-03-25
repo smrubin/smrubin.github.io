@@ -8,7 +8,7 @@ intro: Foot and Ankle Specialists of Virginia (FASV) was seeking to create a web
 ---
 
 <div class="mar-bottom">
-<h2>Challenges</h2>
+<h2 class="article-title">Challenges</h2>
 Foot and Ankle Specialists of Virginia (FASV), a podiatry practice located in Richmond, VA, was seeking to launch a website for the first time for their practice. Before the launch of their new website, virtually no web presence existed for the practice or any of the three doctors, who are leaders in their industry. The practice was seeking a website to increase online presence and foot traffic and the inclusion of an online appointment request form to help reduce burden of phone calls for the front office staff.
 </div>
 <div id="tools" class="mar-bottom">
