@@ -412,6 +412,39 @@ footer .social-icons li {
   padding-top: 1em;
 }
 
+.brick {
+  width: 225px;
+  height: 225px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+#mountain-max {
+  background-image: url('../img/mountain_max.jpg');
+}
+#cocktails {
+  background-image: url('../img/cocktails.jpg');
+}
+#christmas-max {
+  background-image: url('../img/christmas_max.jpg');
+}
+#grand-canyon {
+  background-image: url('../img/grandcanyon.jpg');
+}
+#rafting-land {
+  background-image: url('../img/rafting_land.jpg');
+}
+#rafting-water {
+  background-image: url('../img/rafting_water.jpg');
+}
+#guess-who {
+  background-image: url('../img/guess_who.jpg');
+}
+#skiing-btas {
+  background-image: url('../img/skiing_btas.jpg');
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
