@@ -129,6 +129,10 @@ section, footer {
     padding: 2em 0;
     width: 100%;
 }
+.port-object time {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
 .dark {
     background: #fafafa;
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
@@ -160,7 +164,7 @@ section, footer {
   left: 100%;
   margin-left: 15px;
 }
-#fun-fact, .section-content {
+#fun-fact, .section-content, footer {
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -172,7 +176,6 @@ section, footer {
 }
 .page-header small {
   font-family: 'adobe-garamond', sans-serif;
-  /*font-style: italic;*/
 }
 
 /* About */
@@ -184,8 +187,8 @@ section, footer {
 }
 .img-circle {
     border-radius: 50%;
-    height: 300px;
-    width: 300px;
+    height: 225px;
+    width: 225px;
     margin: 0 auto;
     display: block;
 }
@@ -205,8 +208,6 @@ section, footer {
     font-weight: normal;
 }
 
-
-
 #fun-fact {
   border-bottom: #dddddd solid 1px;
   font-size: 1.2em;
@@ -217,36 +218,58 @@ footer {
     background-color: #f5f5f5;
     box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
     color: #666666;
+    font-size: 1.1em;
 }
-footer .section-content > div {
-    display: inline-block;
+footer .copyright {
+  text-align: center;
+  margin-bottom: 1em;
 }
-footer ul {
-  display: inline-block;
+footer ul.site-links {
+  padding: 0;
 }
-footer li {
-    display: inline-block;
-    margin: 0 1em;
+footer .site-links li {
+  text-align: center;
+  margin-bottom: 1em;
+}
+footer .social-icons {
+  padding: 0;
+  text-align: center;
+}
+footer .social-icons li {
+  display: inline;
+  margin: 0 1em;
 }
 
 /* About Page Specific */
 .circle{
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 7px;
     background-color: #26a65b;
     display: inline-block;
+    vertical-align: middle;
 }
 .square {
     background-color: #446cb3;
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
 }
 .diamond {
+    background-color: #446cb3;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
     transform: rotate(45deg);
-    transform-origin: 0 100%;
-    background-color: #333 !important;
+    transform-origin: 50% 50%;
+    background-color: #333;
+}
+.square .diamond {
+  width: 9px;
+  height: 9px;
+  transform-origin: 110% 60%;
 }
 
 .chart {
@@ -277,7 +300,7 @@ footer li {
   padding: 0 0 !important;
   width: 8%;
   top: -15px;
-  text-align: right !important;
+  text-align: left;
 }
 .chart .axis-label {
   display: inline-block;
@@ -285,6 +308,10 @@ footer li {
   margin-bottom: 55px;
   border-radius: 5px;
   padding: 5px;
+  width: 120px;
+}
+.chart .label-text {
+  margin-right: 0.5em;
 }
 .chart .percent {
   letter-spacing: -3px;
@@ -350,6 +377,11 @@ footer li {
     height: auto;
 }
 
+/* Blog Example specific */
+.post {
+  max-width: 60em;
+}
+
 /* Hepers */
 .text-center {
     text-align: center;
@@ -381,21 +413,63 @@ footer li {
   padding-top: 1em;
 }
 
-@media only screen and (min-width: 768px) {
-  #portfolio .thumbnail, #blog .thumbnail {
-    height: 500px;
-  }
-  #fun-fact, .section-content {
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .article-title {
-    margin-top: 0;
-  }
-  .social {
-    margin-top: 3em;
-  }
-}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+    /*==========  Mobile First Method  ==========*/
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        #portfolio .thumbnail, #blog .thumbnail {
+          height: 500px;
+        }
+        .article-title {
+          margin-top: 0;
+        }
+        .social {
+          margin-top: 3em;
+        }
+        footer .section-content > div {
+          display: inline-block;
+        }
+        footer ul {
+          display: inline-block;
+        }
+        footer li {
+          display: inline-block;
+          margin: 0 1em;
+        }
+        footer .copyright, footer .site-links li {
+          margin-bottom: 0;
+        }
+        .img-circle {
+          height: 300px;
+          width: 300px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+
+    }
+
+
 
 /* ==========================================================================
    Helper classes

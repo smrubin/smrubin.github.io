@@ -11,7 +11,7 @@ Aside from serving as a place for my own thoughts and reminders, I hope that thi
 
 ### The Landscape is Constantly Changing...So You Will Always Be Learning
 
-Web technologies are always shifting. Every day there seems to be a new framework, library, or technology that is better than the last, offering a new piece of functionality or increased performance. With all of these changes, it becomes difficult to keep up. As a web developer, you must place yourself in a constant state of learning. You must be an early adopter of these technologies, get your hands dirty, and dive in. Being at the forefront of the diffusion of innovations leads to new knowledge and opportunities- and I can't stress it enough. [TODO: insert diffusion of innovations graph].
+Web technologies are always shifting. Every day there seems to be a new framework, library, or technology that is better than the last, offering a new piece of functionality or increased performance. With all of these changes, it becomes difficult to keep up. As a web developer, you must place yourself in a constant state of learning. You must be an early adopter of these technologies, get your hands dirty, and dive in. Being at the forefront of the diffusion of innovations leads to new knowledge and opportunities- and I can't stress it enough.
 
 You might feel overwhelmed with all of the different tools, technologies, and methods that exist for web development, and you won't be able to learn everything. Well, at least not when starting out, which brings me to my next point.
 
