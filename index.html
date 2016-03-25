@@ -6,7 +6,7 @@ layout: default
 <section id="about">
     <div class="section-content">
         <h1 class="text-center">Hi there, I'm Sam.</h1>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5"><img src="{{site.baseurl}}/img/samrubin.jpg" alt="Sam Rubin" class="img-circle"></div>
                 <div class="col-md-7">
@@ -43,7 +43,7 @@ layout: default
 <section id="portfolio" class="dark">
     <div class="section-content text-center">
         <div class="section-header mar-bottom"><span>SOME OF MY RECENT WORK</span></div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row text-left mar-bottom">
 
                 {% assign projects = site.projects %}
@@ -54,6 +54,7 @@ layout: default
                         <div class="caption">
                             <h3>{{project.title}}</h3>
                             <p>{{project.intro}}</p>
+                            <a href="{{site.baseurl}}{{project.url}}" title="read more">Read more</a>
                         </div>
                     </a>
                 </div>
@@ -69,7 +70,7 @@ layout: default
 <section id="blog" class="dark">
     <div class="section-content text-center">
         <div class="section-header mar-bottom"><span>BLOG</span></div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row text-left">
 
                 {% for post in site.posts %}

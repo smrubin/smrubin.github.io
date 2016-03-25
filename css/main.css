@@ -103,11 +103,18 @@ textarea {
   font-family: 'adobe-garamond';
   src: url('/fonts/AdobeGaramondProItalic.ttf');
 }
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 body {
     font-family: 'proxima-nova', sans-serif !important;
-    width: 100%;
 }
-.container-fluid, .section-content {
+.navbar .container-fluid, .section-content {
     max-width: 1040px;
     margin: 0 auto;
     width: 100%;
@@ -153,6 +160,10 @@ section , footer {
   left: 100%;
   margin-left: 15px;
 }
+#fun-fact, .section-content {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 .more {
   padding: 1em;
   display: inline-block;
@@ -171,9 +182,6 @@ section , footer {
     justify-content: space-around;
     margin-top: 2em;
 }
-#about .thumbnail img {
-    /*height: 100px;*/
-}
 .img-circle {
     border-radius: 50%;
     height: 300px;
@@ -184,9 +192,6 @@ section , footer {
 /* Portfolio */
 #portfolio a:hover, #blog a:hover {
     text-decoration: none;
-}
-#portfolio .thumbnail, #blog .thumbnail {
-  height: 475px;
 }
 
 /* Skils */
@@ -373,6 +378,15 @@ footer li {
     padding-right: 1em;
 }
 
+@media only screen and (min-width: 768px) {
+  #portfolio .thumbnail, #blog .thumbnail {
+    height: 475px;
+  }
+  #fun-fact, .section-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
 /* ==========================================================================
    Helper classes
