@@ -508,7 +508,13 @@ footer .social-icons li {
  */
 
 .post {
-  max-width: 60em;
+  max-width: 40em;
+  font-size: 20px;
+  line-height: 1.58;
+}
+.blog-post h1, .blog-post h2, .blog-post h3, .blog-post h4, .blog-post h5, .blog-post h6 {
+    font-weight: bold !important;
+    padding-top: 1em;
 }
 
 

@@ -11,7 +11,9 @@ page-type: post
           <time itemprop="dateCreated" datetime="{{page.date}}">
           {{ page.date | date: "%B %-d, %Y" }}</time>
         </div>
-        {{content}}
+        <div class="blog-post">
+          {{content}}
+        </div>
       </article>
       <a href="{{site.baseurl}}/blog.html" title="back to blog"><i class="fa fa-arrow-left pad-right"></i>Back to Blogs</a>
     </div>
