@@ -2,6 +2,7 @@
 layout: post
 title:  "Web Development Tools I Wished I Had Known From the Start: Part 1"
 date:   2016-03-17
+author: Sam Rubin
 img: tools1.jpg
 ---
 

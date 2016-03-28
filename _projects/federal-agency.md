@@ -4,6 +4,7 @@ tagline: Generating a Sleek, New User Interface for a Federal Agency
 timeline: September, 2015 - March, 2016
 mainImg: pro.png
 altImg: pro-2.png
+tools: Javascript, jQuery, Bootstrap, Gulp
 intro: A U.S. Government Federal Agency was in need of a landing page and portal to bring together disparate systems. They required a solution that was sleek and consistent across all systems, and that integrated all user actions into a single, manageable landing page. Check out how my solution brought together these different systems under one roof and created a modern and intuitive, front-facing application for agency stakeholders.
 ---
 

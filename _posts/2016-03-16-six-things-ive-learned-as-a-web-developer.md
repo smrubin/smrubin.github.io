@@ -2,6 +2,7 @@
 layout: post
 title:  "Six Things I've Learned as a Web Developer"
 date:   2016-03-09
+author: Sam Rubin
 img: developer.jpg
 ---
 
