@@ -7,6 +7,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const gutil = require('gulp-util');
 const cssnano = require('gulp-cssnano');
+const autoprefixer = require('gulp-autoprefixer');
 
 const siteRoot = '_site';
 const cssFiles = 'css/**/*.css';
@@ -15,16 +16,16 @@ const cssFiles = 'css/**/*.css';
 gulp.task('css', () => {
   gulp.src(cssFiles)
     .pipe(concat('main.min.css'))
+    .pipe(autoprefixer())
     .pipe(cssnano())
-    .pipe(gulp.dest('_site/css'));
+    .pipe(gulp.dest('css'));
 });
 
 
 gulp.task('jekyll', () => {
-  const jekyll = child.exec('jekyll', ['build',
+  const jekyll = child.spawn('jekyll.bat', ['build',
     '--watch',
-    '--incremental',
-    '--drafts'
+    '--incremental'
   ]);
 
   const jekyllLogger = (buffer) => {
@@ -49,5 +50,4 @@ gulp.task('serve', () => {
   gulp.watch(cssFiles, ['css']);
 });
 
-gulp.task('default', ['css', 'jekyll', 'serve']);
-
+gulp.task('default', ['css','jekyll', 'serve']);
