@@ -29,5 +29,5 @@ A U.S. Government Federal Agency was deploying a financial application suite tha
 </div>
 <div class="mar-bottom">
 <h2>Results</h2>
-The Federal Agency's application suite is currently gearing up for their first major release. The landing page and portal serve as an integral part of the first release and have received commendation from both the internal team and client stakeholders. The clients are eager to upgrade from a legacy system to one with a sleak user interface and ease of use. All of the live demoes have beeen successful and exceeded expectations to date. Be on the lookout for final results from the application's first and continued releases.
+The Federal Agency's application suite is currently gearing up for their first major release. The landing page and portal serve as an integral part of the first release and have received commendation from both the internal team and client stakeholders. The clients are eager to upgrade from a legacy system to one with a sleek user interface and ease of use. All of the live demoes have beeen successful and exceeded expectations to date. Be on the lookout for final results from the application's first and continued releases.
 </div>
