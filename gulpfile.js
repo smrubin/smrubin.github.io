@@ -18,7 +18,7 @@ gulp.task('css', () => {
     .pipe(concat('main.min.css'))
     .pipe(autoprefixer())
     .pipe(cssnano())
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('assets'));
 });
 
 
