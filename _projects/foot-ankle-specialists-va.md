@@ -6,6 +6,7 @@ mainImg: fasv.png
 altImg: fasv-3.png
 tools: CSS3, Bootstrap, Google Forms
 intro: Foot and Ankle Specialists of Virginia (FASV) was seeking to create a website and web presence for the first time. They wanted their website to be mobile-friendly and to grow the presence of their business online. Explore how the website I created for FASV exceeded their expectations, generated new patients, and reduced burden of office staff.
+featured: true
 ---
 
 <div class="mar-bottom">

@@ -48,6 +48,7 @@ layout: default
 
                 {% assign projects = site.projects %}
                 {% for project in projects %}
+                {% if project.featured %}
                 <div class="col-sm-6">
                     <div class="thumbnail">
                         <div class="image" data-content="{{project.tools}}">
@@ -59,6 +60,7 @@ layout: default
                         </div>
                     </div>
                 </div>
+                {% endif %}
                 {% endfor %}
 
             </div>
