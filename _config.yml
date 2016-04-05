@@ -2,7 +2,7 @@
 title: Sam Rubin | Web Developer
 description: "The personal and professional website of Sam Rubin, a front end web developer."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://smrubin.github.io" # the base hostname & protocol for your site
+url: "http://samrubin.co" # the base hostname & protocol for your site
 
 collections:
   projects:
