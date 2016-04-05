@@ -5,6 +5,7 @@ date:   2016-04-03
 author: Sam Rubin
 img: webdev.jpg
 featured: true
+comments: true
 ---
 
 Part 2 of my favorite web development tools continues. If you haven't checked out [Part 1]({{site.baseurl}}/blog/web-development-tools-i-wish-i-had-known-from-the-start-part-1) yet, be sure to give it a read as it talks about the motivation behind this series. Here are *even more* of tools I use frequently and wish I had known about a lot sooner.

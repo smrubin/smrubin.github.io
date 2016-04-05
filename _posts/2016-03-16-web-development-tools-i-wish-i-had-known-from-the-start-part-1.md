@@ -5,6 +5,7 @@ date:   2016-03-17
 author: Sam Rubin
 img: tools1.jpg
 featured: false
+comments: true
 ---
 
 When I built my first website, my toolset included TextEdit along with basic HTML, CSS and PHP. Years later, I have discovered some amazing tools and resources that enable me to develop at many times the pace. Not only do these resources help me to develop faster, but they also help me to develop better- writing cleaner code, optimizing my web applications, and using industry best practices. I don't necessarily use all of these tools for every project that I work on, but I can guarantee you that I at least use a subset of them. It is my goal that this blog post not only serves as a continuallly updated repository for myself, but will also help junior, or even experienced, developers discover some amazing tools.
