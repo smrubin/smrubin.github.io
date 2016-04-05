@@ -50,15 +50,15 @@ layout: default
                 {% for project in projects %}
                 {% if project.featured %}
                 <div class="col-sm-6">
-                    <div class="thumbnail">
+                    <a href="{{site.baseurl}}{{project.url}}" class="thumbnail">
                         <div class="image" data-content="{{project.tools}}">
-                        <img src="{{site.baseurl}}/img/{{project.mainImg}}" alt="{{project.title}}">
+                        <img src="{{site.baseurl}}/img/projects/tn-{{project.mainImg}}" alt="{{project.title}}">
                         </div>
                         <div class="caption">
                             <h3>{{project.title}}</h3>
-                            <p>{{project.intro}}<br/><a href="{{site.baseurl}}{{project.url}}" title="read more" class="read-more">Read more</a></p>
+                            <p>{{project.intro}}<br/><span title="read more" class="read-more">Read more</span></p>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 {% endif %}
                 {% endfor %}
@@ -80,7 +80,7 @@ layout: default
                 {% if post.featured %}
                 <div class="col-sm-6">
                     <a href="{{site.baseurl}}{{post.url}}" class="thumbnail">
-                        <img src="{{site.baseurl}}/img/{{post.img}}" alt="{{post.title}}">
+                        <img src="{{site.baseurl}}/img/blog/{{post.img}}" alt="{{post.title}}">
                         <div class="caption">
                             <h3>{{post.title}}</h3>
                             <time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time>
