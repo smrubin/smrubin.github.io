@@ -14,7 +14,8 @@
   </main>
 
   {% include footer.html %}
-
+  
+  <!--[if gt IE 8]><!><script src="{{site.baseurl}}/js/vendor/modernizr-2.8.3.min.js"></script><!<![endif]-->
   <script src="https://code.jquery.com/jquery-1.12.1.min.js"></script>
   <script>window.jQuery || document.write('<script src="{{site.baseurl}}/js/vendor/jquery-1.12.1.min.js"><\/script>')</script>
   <script src="{{site.baseurl}}/js/plugins.js"></script>
@@ -22,7 +23,6 @@
   <script src="//cdn.rawgit.com/noelboss/featherlight/1.4.0/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="{{site.baseurl}}/js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
       ga('create','UA-75792933-1','auto');ga('send','pageview')
