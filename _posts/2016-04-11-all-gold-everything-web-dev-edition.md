@@ -39,9 +39,9 @@ I'm a [Windows User](#windows) &#124; [Mac User](#mac)
 2. Now, unfortunately for Mac Users, the Gold Chrome icon doesn't actually come pre-packaged with the standard Google Chrome download for Mac. But no worries, you can just save the image below to your desktop and use that. Either drag or right-click and save the image below to your desktop.  
   ![golden chrome canary icon]({{site.baseurl}}/img/blog/chrome-canary.ico "Golden Google Chrome")
 
-3. Next, create a shortcut for your Google Chrome application, locaed in your Applications folder, by either dragging a copy to the desktop or right-clicking and selecting `Make Alias`.
+3. Next, create a shortcut for your Google Chrome application, located in your Applications folder, by either dragging a copy to the desktop or right-clicking and selecting `Make Alias`.
 
-4. Select and right-click your new shortcut / alias for Google Chrome, and select `Get Info`. In the top-right of the pop-up menu, your will see the current icon used for your Google Chrome alias. Drag and drop the Golden Google Chrome icon, downloaded from the image above, onto the existing icon. It should now replace the standard Chrome icon.
+4. Select and right-click your new shortcut / alias for Google Chrome, and select `Get Info`. In the top-right of the pop-up menu, you will see the current icon used for your Google Chrome alias. Drag and drop the Golden Google Chrome icon, downloaded from the image above, onto the existing icon. It should now replace the standard Chrome icon.
 
 5. Feel free to either leave the alias on your desktop, or drag it to your Dock. Congratulations, you can now get back to browsing with the Golden Google Chrome.
 

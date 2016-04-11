@@ -4,8 +4,8 @@
     <!-- Regular Meta Info -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{site.keywords}}{% endif %}">
     <!-- <link rel="author" href="https://plus.google.com/{{googlePlusId}}" /> -->
     <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
@@ -19,6 +19,15 @@
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}">
     <meta property="og:description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:see_also" content="{{ site.url }}">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@sammrubin">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
+    <meta name="twitter:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}"> 
 
     <!-- <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" /> -->
     <!-- <link rel="image_src" type="image/png" href="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" /> -->
