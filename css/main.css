@@ -118,6 +118,10 @@ html, body {
     font-family: 'proxima-nova', sans-serif !important;
 }
 
+code {
+    color: #333;
+}
+
 /*
  * 'Include' element styling
  */
