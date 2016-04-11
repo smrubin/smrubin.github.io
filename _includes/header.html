@@ -13,7 +13,7 @@
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="o_LfygouQ27lQuGc2N58VdfD1Q2XR01eR8bSK44FwMY" />
 
-    <!-- Facebook Meta Info -->
+    <!-- Facebook OpenGraph Meta Info -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:type" content="{% if page.comments %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -21,7 +21,7 @@
     <meta property="og:description" content="{% if page.comments %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
 
 <!--     <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" /> -->
-    <!-- <link rel="image_src" type="image/png" href="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" /> -->
+    <link rel="image_src" type="image/png" href="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
 
     <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
 
