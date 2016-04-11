@@ -17,7 +17,7 @@
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:type" content="{% if page.comments %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <meta property="og:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+    <meta property="og:image" content="{% if page.img %}{{ site.url }}{{ site.baseurl }}/img/blog/{{ page.img }}{% else %}{{ site.url }}{{ site.baseurl }}/img/preview.PNG{% endif %}">
     <meta property="og:description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:see_also" content="{{ site.url }}">
@@ -26,14 +26,14 @@
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta itemprop="description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
-    <meta itemprop="image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+    <meta itemprop="image" content="{% if page.img %}{{ site.url }}{{ site.baseurl }}/img/blog/{{ page.img }}{% else %}{{ site.url }}{{ site.baseurl }}/img/preview.PNG{% endif %}">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@sammrubin">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
-    <meta name="twitter:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}"> 
+    <meta name="twitter:image" content="{% if page.img %}{{ site.url }}{{ site.baseurl }}/img/blog/{{ page.img }}{% else %}{{ site.url }}{{ site.baseurl }}/img/preview.PNG{% endif %}"> 
 
     <!-- <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" /> -->
     <!-- <link rel="image_src" type="image/png" href="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" /> -->
