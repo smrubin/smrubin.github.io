@@ -6,6 +6,8 @@ author: Sam Rubin
 img: web-development-tools-i-wish-i-had-known-from-the-start-part-2.jpg
 featured: true
 comments: true
+keywords: "development, tools, resources, wish, wished, start, developer, web, best, practices, rubin, sam"
+description: "I have discovered some amazing tools and resources that enable me to develop at many times the pace. Not only do these resources help me to develop faster, but they also help me to develop better- writing cleaner code, optimizing my web applications, and using industry best practices. It is my goal that this blog post not only serves as a continuallly updated repository for myself, but will also help junior, or even experienced, developers discover some amazing tools."
 ---
 
 Part 2 of my favorite web development tools continues. If you haven't checked out [Part 1]({{site.baseurl}}/blog/web-development-tools-i-wish-i-had-known-from-the-start-part-1) yet, be sure to give it a read as it talks about the motivation behind this series. Here are *even more* of tools I use frequently and wish I had known about a lot sooner.

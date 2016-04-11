@@ -5,7 +5,8 @@ timeline: December, 2015
 mainImg: honeycombs-vertical.png
 altImg: honeycombs-horizontal.png
 tools: jQuery, CSS
-intro: How do you create a responsive grid of hexagons to form a honeycomb shape? This open-source, easily implementable and responsive jQuery plugin I developed allows for full customization of a honeycomb grid.
+description: How do you create a responsive grid of hexagons to form a honeycomb shape? This open-source, easily implementable and responsive jQuery plugin I developed allows for full customization of a honeycomb grid.
+keywords: "sam, rubin, developer, web, designer, development, design, honeycombs, honeycomb, jquery, plugin, hexagon, hexagonal, grid, vertical, horizontal, responsive"
 featured: false
 ---
 

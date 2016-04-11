@@ -6,6 +6,8 @@ author: Sam Rubin
 img: all-gold-everything-web-dev-edition.JPG
 featured: false
 comments: true
+keywords: "gold, golden, chrome, google, icon, image, application, rubin, sam"
+description: "Everyone wants to know how and where I got the Golden Google Chrome icon. Surprising to most, the gold Chrome icon actually is packaged with your Google Chrome download (i.e. it's already on your computer). This post will walk through how you can get the Gold Chrome icon."
 ---
 
 Working in a team environment, I constantly find myself projecting my desktop to others in the room. And every time I do, I get asked about several of the *cool* looking applications in my taskbar / dock. Specifically, everyone wants to know how and where I got the Golden Google Chrome icon.
