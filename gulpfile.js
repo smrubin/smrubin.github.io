@@ -8,17 +8,27 @@ const concat = require('gulp-concat');
 const gutil = require('gulp-util');
 const cssnano = require('gulp-cssnano');
 const autoprefixer = require('gulp-autoprefixer');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
 
 const siteRoot = '_site';
 const cssFiles = 'css/**/*.css';
+const imgFiles = 'img/**/*'
 
-
+// Minify, concatenate, and autoprefix CSS
 gulp.task('css', () => {
-  gulp.src(cssFiles)
+  return gulp.src(cssFiles)
     .pipe(concat('main.min.css'))
     .pipe(autoprefixer())
     .pipe(cssnano())
     .pipe(gulp.dest('assets'));
+});
+
+// Minify and cache images
+gulp.task('images', () => {
+  return gulp.src(imgFiles)
+    .pipe(cache(imagemin({ optimizationLevel: 5, progressive: true, interlaced: true })))
+    .pipe(gulp.dest('assets/img'));
 });
 
 
@@ -50,4 +60,4 @@ gulp.task('serve', () => {
   gulp.watch(cssFiles, ['css']);
 });
 
-gulp.task('default', ['css','jekyll', 'serve']);
+gulp.task('default', ['css', 'images', 'jekyll', 'serve']);
