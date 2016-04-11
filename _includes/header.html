@@ -9,9 +9,12 @@
     
     <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
 
-    <meta property="og:image" content="http://samrubin.co/img/preview.PNG" />
-    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="http://samrubin.co/img/preview.PNG" />
-    <link rel="image_src" type="image/png" href="{{site.baseurl}}/preview.PNG" />
+    <!-- <meta property="og:image" content="http://samrubin.co/img/preview.PNG" /> -->
+    
+    <meta property="og:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+    <link rel="image_src" type="image/png" href="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
 
     <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
