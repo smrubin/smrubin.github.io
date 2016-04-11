@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "All Gold Everything: Web Dev Edition"
-date:   2016-04-08
+date:   2016-04-11
 author: Sam Rubin
 img: all-gold-everything-web-dev-edition.JPG
 featured: false
