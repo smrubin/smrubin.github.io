@@ -21,6 +21,12 @@
     <meta property="og:description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:see_also" content="{{ site.url }}">
+    {% if page.comments %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}" />{% endif %}
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta itemprop="description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
+    <meta itemprop="image" content="{% if page.img %}{{site.url}}{{site.baseurl}}/img/blog/{{page.img}}{% else %}{{ img/preview.PNG | prepend: site.baseurl | prepend: site.url }}{% endif %}">
 
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary">
