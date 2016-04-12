@@ -450,22 +450,19 @@ footer .social-icons li {
   border: 1px solid #ab64f4;
 }
 
-.list-header {
-  display: inline-block;
-  margin-bottom: 0.5em;
-  font-size: 1em !important;
+.logo-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
-#skills ul {
-    font-size: 1.2em;
-    font-weight: 500;
-    list-style: none;
+.logo-wrapper img {
+  max-width: 33.33%;
+  max-height: 100px;
+  margin: 2em;
 }
 
-#skills li {
-    font-size: 0.833em;
-    font-weight: normal;
-}
 
 .brick {
   width: 225px;
