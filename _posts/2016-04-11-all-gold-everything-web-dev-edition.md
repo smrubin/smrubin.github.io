@@ -48,7 +48,7 @@ I'm a [Windows User](#windows) &#124; [Mac User](#mac)
 
 ### So where does this Gold Chrome icon really come from?
 
-Google Chrome offers a variation of their borwser, called Chrome Canary, that has the newest of the new Chrome features. It is designed for developers and early adopters. The icon for Chronme Canary is the golden Chrome icon and Google packages all of the icons together. This way, even though you downloaded the standard Google Chrome, you still have access to the Chrome Canary icon set!
+Google Chrome offers a variation of their browser, called Chrome Canary, which has the newest of the new Chrome features. It is designed for developers and early adopters. The icon for Chrome Canary is the golden Chrome icon and Google packages all of the icons together. This way, even though you downloaded the standard Google Chrome, you still have access to the Chrome Canary icon set!
 
 ### Enjoy
 

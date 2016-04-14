@@ -24,5 +24,5 @@ How do you create a responsive grid of hexagons to form a honeycomb shape? How d
 </div>
 <div class="mar-bottom">
 <h2>Results</h2>
-The open-source jQuery Honeycombs plugin allows developers to easily create a repsonsive, hexagon grid with their own content. Additionally, it supports full customization for the sizing, spacing, orientation, color, and flipping of each hexagon in the grid. The project is up and running on GitHub and has been favorited by several users. 
+The open-source jQuery Honeycombs plugin allows developers to easily create a responsive, hexagon grid with their own content. Additionally, it supports full customization for the sizing, spacing, orientation, color, and flipping of each hexagon in the grid. The project is up and running on GitHub and has been favorited by several users. 
 </div>
