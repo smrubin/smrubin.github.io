@@ -20,6 +20,9 @@ exclude:
   - node_modules
   - gulpfile.js
 
+# Gems
+gems: [jekyll-paginate]
+
 
 # Build settings
 highlighter: rouge
@@ -27,4 +30,6 @@ markdown: kramdown
 kramdown:
   auto_ids: false
 permalink: /blog/:title
+paginate: 6
+paginate_path: '/blog/page:num/'
 

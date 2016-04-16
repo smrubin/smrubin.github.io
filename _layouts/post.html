@@ -15,7 +15,15 @@ page-type: post
           {{content}}
         </div>
       </article>
-      <a href="{{site.baseurl}}/blog.html" title="back to blog"><i class="fa fa-arrow-left pad-right mar-bottom"></i>Back to Blog</a>
+
+      <div class="PageNavigation mar-bottom">
+        {% if page.previous.url %}
+          <a class="left" href="{{page.previous.url}}"><i class="fa fa-arrow-left pad-right" aria-hidden="true"></i>{{page.previous.title}}</a>
+        {% endif %}
+        {% if page.next.url %}
+          <a class="right" href="{{page.next.url}}">{{page.next.title}}<i class="fa fa-arrow-right pad-left" aria-hidden="true"></i></a>
+        {% endif %}
+      </div>
 
       {% if page.comments %}
       <div id="disqus_thread"></div>

@@ -8,7 +8,7 @@ title: Blog
         <div class="page-header">
             <h1>{{page.title}} <small>Jotting down my thoughts</small></h1>
         </div>
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
             <div class="container-fluid">
                 <div class="row port-object">
@@ -25,6 +25,20 @@ title: Blog
             </div>
         </article>
         {% endfor %}
+
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+            <p class="prevLink left"><a href="{{site.baseurl}}/blog/index.html" class="previous"><i class="fa fa-arrow-left pad-right" aria-hidden="true"></i>newer entries</a></p>
+            {% else %}
+            <p class="prevLink left"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous"><i class="fa fa-arrow-left pad-right" aria-hidden="true"></i>newer entries</a></p>
+            {% endif %}
+            {% endif %}
+            {% if paginator.next_page %}
+            <p class="nextLink right"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">older entries<i class="fa fa-arrow-right pad-left" aria-hidden="true"></i></a></p>
+            {% endif %}
+            <div style="clear: both;"></div>
+        </div>
     
     </div>
 </section>

@@ -408,11 +408,6 @@ footer .social-icons li {
   font-size: 1.375rem;
   position: absolute;
 }
-/*
-.chart .percent span {
-  font-size: 30px;
-  font-size: 1.875rem;
-}*/
 
 .chart .skill {
   bottom: 20px;
@@ -463,7 +458,6 @@ footer .social-icons li {
   margin: 2em;
 }
 
-
 .brick {
   width: 225px;
   height: 225px;
@@ -500,6 +494,14 @@ footer .social-icons li {
     padding-bottom: 1em;
 }
 
+/*
+ * Blog Page Styling
+ */
+
+.pagination {
+  width: 100%;
+}
+
 
 /*
  * Blog Post Page Styling
@@ -515,6 +517,17 @@ footer .social-icons li {
     padding-top: 1em;
 }
 
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.PageNavigation a {
+  display: inline-block;
+  margin: 1em 0;
+}
 
 /*
  * Contact Page Styling
@@ -549,6 +562,12 @@ footer .social-icons li {
 .underline {border-bottom: 1px solid #dddddd;}
 
 .pad-right {padding-right: 1em;}
+
+.pad-left {padding-left: 1em;}
+
+.right {float:right;}
+
+.left {float:left;}
 
 .no-pad {padding: 0 !important;}
 
