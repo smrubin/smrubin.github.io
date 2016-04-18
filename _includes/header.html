@@ -1,4 +1,12 @@
 <head>
+
+    <!-- Redirect users to https -->
+    <script type="text/javascript">
+        var host = "samrubin.co";
+        if ((host == window.location.host) && (window.location.protocol != "https:"))
+            window.location.protocol = "https";
+    </script>
+
     <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title> 
 
     <!-- Regular Meta Info -->
@@ -8,7 +16,7 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{site.description}}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{site.keywords}}{% endif %}">
     <link rel="author" href="https://plus.google.com/116393399712138893961">
-    <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
+    <link rel="canonical" href="{{site.url}}{{site.baseurl}}{{page.url}}">
 
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="o_LfygouQ27lQuGc2N58VdfD1Q2XR01eR8bSK44FwMY" />
