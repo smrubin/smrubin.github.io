@@ -158,8 +158,6 @@ code {
   transform: rotate(0);
 }
 
-
-
 /*
  * 'Include' element styling
  */
@@ -635,6 +633,26 @@ footer .social-icons li {
         .site-content {
             /*flex: 1;*/
             min-height: calc(100vh - 100px);
+        }
+
+
+        /*
+        * Navbar hover effect
+        */
+
+        .navbar-nav a {
+          transition: 0.3s ease;
+          border-top: 3px solid #222;
+          border-bottom: 3px solid #222;
+        }
+
+        .navbar-nav a:hover, .navbar-nav .active {
+          border-top: 3px solid #fff;
+          border-bottom: 3px solid #fff;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          margin-top: 11px;
+          margin-bottom: 11px;
         }
 
 
