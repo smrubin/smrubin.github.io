@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Web Development Tools I Wish I Had Known From the Start: Part 2"
-date:   2016-04-03
+title: "Web Development Tools I Wish I Had Known From the Start: Part 2"
+date: 2016-04-03
 author: Sam Rubin
 img: web-development-tools-i-wish-i-had-known-from-the-start-part-2.jpg
 featured: true

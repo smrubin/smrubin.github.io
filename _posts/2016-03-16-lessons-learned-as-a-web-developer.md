@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Lessons Learned as a Web Developer"
-date:   2016-03-09
+title: "Lessons Learned as a Web Developer"
+date: 2016-03-09
 author: Sam Rubin
 img: lessons-learned-as-a-web-developer.jpg
 featured: true
