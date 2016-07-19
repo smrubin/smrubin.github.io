@@ -355,6 +355,10 @@ footer .social-icons li {
   margin-bottom: 0.5em;
 }
 
+.port-object .img-resp {
+  display: block;
+}
+
 
 /*
  * 'About' Page Styling

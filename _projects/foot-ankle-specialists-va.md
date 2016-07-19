@@ -7,7 +7,7 @@ altImg: fasv-alt.png
 tools: CSS3, Bootstrap, Google Forms
 description: Foot and Ankle Specialists of Virginia (FASV) was seeking to create a website and web presence for the first time. They wanted their website to be mobile-friendly and to grow the presence of their business online. Explore how the website I created for FASV exceeded their expectations, generated new patients, and reduced burden of office staff.
 keywords: "sam, rubin, developer, web, designer, development, design, foot, ankle, specialists, virginia, va, podiatry, practice, digital"
-featured: true
+featured: false
 ---
 
 <div class="mar-bottom">
@@ -22,7 +22,7 @@ Foot and Ankle Specialists of Virginia (FASV), a podiatry practice located in Ri
     <li>Bootstrap</li>
 </ul>
 <ul>
-    <li>Javascript</li>
+    <li>JavaScript</li>
     <li>Google Forms and Spreadsheets</li>
     <li>Google Analytics</li>
 </ul>

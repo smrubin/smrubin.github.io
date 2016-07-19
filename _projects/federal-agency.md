@@ -20,7 +20,7 @@ A U.S. Government Federal Agency was deploying a financial application suite tha
     <li>HTML5</li>
     <li>CSS3</li>
     <li>Bootstrap</li>
-    <li>Javascript</li>
+    <li>JavaScript</li>
 </ul>
 <ul>
     <li>jQuery</li>
