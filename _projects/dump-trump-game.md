@@ -12,7 +12,7 @@ featured: true
 
 <div class="mar-bottom">
 <h2 class="article-title">Process</h2>
-Our team of two wanted to embrace the full process of designing and developing a game. For an agile workflow, we set up Trello to bucket our tasks, assign them, and track their completion. Then we white-boarded responsive designs for the game and solicited feedback from potential players, made some changes, and repeated this process. Finally, we dove into the code and created a responsive game built with draggable HTML5 canvas components, maintaining and versioning our code over Git.
+Our team of two wanted to embrace the full process of designing and developing a game. For an agile workflow, we set up Trello to bucket our tasks, assign them, and track their completion. Then we white-boarded responsive designs for the game and solicited feedback from potential players, made some changes, and repeated this process. Finally, we dove into the code and created a responsive game built with draggable HTML5 canvas components, maintaining and versioning our code over Git. [Check it out here!](http://dumptrumpgame.com)
 </div>
 <div id="tools" class="mar-bottom">
 <h2>Tools</h2>
