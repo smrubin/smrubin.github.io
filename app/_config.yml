@@ -1,0 +1,29 @@
+# Site settings
+title: Sam Rubin | Web Developer
+description: "The personal and professional website of Sam Rubin, a front end web developer located in Arlington, Virginia."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://samrubin.co" # the base hostname & protocol for your site; added https protocol
+enforce_ssl: samrubin.co
+keywords: "rubin, sam, Sam Rubin, arlington, developer, web, designer, front end, web design, development, front-end developer, virginia, freelance, freelance developer, deloitte"
+
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js
+
+# Gems
+gems: [jekyll-paginate]
+
+
+# File structure
+destination: ../_site
+
+
+# Build settings
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  auto_ids: false
+permalink: /blog/:title
+paginate: 6
+paginate_path: '/blog/page:num/'
