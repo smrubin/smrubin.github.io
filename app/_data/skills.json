@@ -1,0 +1,26 @@
+[
+  {
+    'title': 'Front End',
+    'skills': [
+      'html',
+      'css',
+      'sdf'
+    ]
+  },
+  {
+    'title': 'Back End',
+    'skills': [
+      'sdf',
+      'sdf',
+      'sdf'
+    ]
+  },
+  {
+    'title': 'Miscellaneous',
+    'skills': [
+      'sdf',
+      'sdf',
+      'sdf'
+    ]
+  }
+]

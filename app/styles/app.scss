@@ -2,48 +2,11 @@
 ---
 
 @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,600);
+
 @import 'vendor/normalize';
-@import 'vendor/simple-grid';
+@import 'vendor/skeleton';
 @import 'vars';
-
-.home {
-  @extend .container;
-
-  &-hero {
-    @extend .row;
-
-    background-color: gray;
-
-    &-img {
-      @extend .col-4;
-      width: 300px;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    &-bio {
-      @extend .col-8;
-    }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
+@import 'mixins';
+@import 'components/navbar';
+@import 'components/home';

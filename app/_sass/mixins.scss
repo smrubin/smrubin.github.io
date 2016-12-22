@@ -1,0 +1,28 @@
+@mixin desktop {
+  @media (min-width: #{$desktop-min-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-max-width}) {
+    @content;
+  }
+}
+
+@mixin partial-underline($color) {
+  background-color: $color;
+  display: block;
+  height: 3px;
+  width: 20px;
+}
+
+@mixin header-box($color) {
+  border: 3px solid $color;
+  color: $color;
+  display: inline-block;
+  font-size: 24px;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
