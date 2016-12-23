@@ -2,25 +2,44 @@
   {
     'title': 'Front End',
     'skills': [
-      'html',
-      'css',
-      'sdf'
+      'JavaScript (ES6)',
+      'Angular',
+      'SASS',
+      'Karma / Jasmine',
+      'HTML / CSS',
+      'jQuery',
+      'Bootstrap / Skeleton',
+      'Jekyll'
     ]
   },
   {
-    'title': 'Back End',
+    'title': 'Full Stack',
     'skills': [
-      'sdf',
-      'sdf',
-      'sdf'
+      'Node.js',
+      'Express',
+      'MySQL',
+      'AWS (RDS, S3, Data Pipeline)',
+      'AWS (EC2, Lambda)',
+      'Apache Solr',
+      'Firebase',
+      'Java',
+      'Groovy on Rails (Grails)',
+      'XML / XSD',
+      'json / jsonschema'
     ]
   },
   {
-    'title': 'Miscellaneous',
+    'title': 'Tools & Tech',
     'skills': [
-      'sdf',
-      'sdf',
-      'sdf'
+      'Git',
+      'Gulp',
+      'Yeoman',
+      'npm',
+      'AWS (Route 53, IAM, WorkMail)',
+      'Browserify',
+      'JIRA',
+      'Google Analytics',
+      'Social Media Marketing / UTM'
     ]
   }
 ]

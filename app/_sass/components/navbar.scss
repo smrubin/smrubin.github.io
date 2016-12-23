@@ -4,6 +4,7 @@
   }
 
   background-color: $pillow-grey;
+  padding: 20px 15px;
   text-align: center;
 
   ul {
@@ -15,9 +16,20 @@
   li {
     display: inline-block;
     padding: 0 10px;
+
+    a, a:visited, a:active, a:link {
+      border-bottom: 2px solid transparent;
+      color: $midnight-blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      border-bottom: 2px solid $midnight-blue;
+    }
   }
 
   img {
     width: 25px;
+    vertical-align: middle;
   }
 }

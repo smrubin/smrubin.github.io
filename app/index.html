@@ -56,6 +56,9 @@ layout: default
               <a class="home-hero-bio-social-tile" href="#">
                 <i class="fa fa-file-pdf-o"></i>
               </a>
+              <a class="home-hero-bio-social-tile" href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
             </div>
 
           </div>
@@ -68,10 +71,10 @@ layout: default
   <section class="home-skills">
     <div class="container">
       <div class="home-skills-header-box">Skills</div>
-      <div class="row">
+      <div class="home-skills-cards">
         {% for card in site.data.skills %}
         <div class="home-skills-card">
-          <h3>{{ card.title }}</h3>
+          <h3 class="home-skills-card-title">{{ card.title }}</h3>
           <ul>
             {% for skill in card.skills %}
             <li>{{ skill }}</li>
@@ -79,6 +82,13 @@ layout: default
           </ul>
         </div>
         {% endfor %}
+        <div class="home-skills-card-back">&nbsp;
+<!--           <h3>lorem</h3>
+          <ul><li>adf</li>
+          <li>sdf</li>
+          <li>sdf</li></ul> -->
+        </div>
+        <div class="home-skills-card-back"></div>
       </div>
     </div>
   </section>
