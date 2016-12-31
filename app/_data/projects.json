@@ -1,7 +1,7 @@
 [
   {
     'title': 'U.S. Government Federal Agency',
-    'description': 'A U.S. Government Federal Agency was deploying a financial application suite that encompassed several disparate box product systems. The agency desired a web application landing page and portal that provided a single point of entry into all of these systems. The application needed to be very intuitive and, in real-time, query and present data from the other system APIs. Finally, the client stakeholders required a consistent look, feel, and integration across the applications to make a seamless experience for the users. This integration proved especially challenging with the difficulties surrounding cross-origin resource sharing (CORS).',
+    'description': 'A custom web portal designed and developed for a U.S. Government Federal Agency&apos;s financial application suite. The final product used cross-origin resource sharing (CORS) to integrate multiple IBM products under one, consistently themed application.',
     'image': 'pro.png',
     'skills': [
       'HTML',
@@ -20,7 +20,7 @@
   },
   {
     'title': 'Foot & Ankle Specialists of VA',
-    'description': ' Foot and Ankle Specialists of Virginia (FASV), a podiatry practice located in Richmond, VA, was seeking to launch a website for the first time for their practice. Before the launch of their new website, virtually no web presence existed for the practice or any of the three doctors, who are leaders in their industry. The practice was seeking a website to increase online presence and foot traffic and the inclusion of an online appointment request form to help reduce burden of phone calls for the front office staff.',
+    'description': 'A website and streamlined patient appointment request process developed for a local podiatry practice. The website has led to several hundred new patients for the customer and has saved staff both the time and effort of manual data entry.',
     'image': 'fasv.png',
     'skills': [
       'HTML',
@@ -35,7 +35,7 @@
   },
   {
     'title': 'The Dump Trump Game',
-    'description': 'Our team of two wanted to embrace the full process of designing and developing a game. For an agile workflow, we set up Trello to bucket our tasks, assign them, and track their completion. Then we white-boarded responsive designs for the game and solicited feedback from potential players, made some changes, and repeated this process. Finally, we dove into the code and created a responsive game built with draggable HTML5 canvas components, maintaining and versioning our code over Git.',
+    'description': 'A weekend hackathon project to build a fun, challenging, parody game. Our team of two embraced the full process of designing and developing a game, including an agile workflow, white-boarding, soliciting user feedback, and tracking tickets and working branches of code.',
     'image': 'dtg.png',
     'skills': [
       'HTML',
@@ -50,7 +50,7 @@
   },
   {
     'title': 'jQuery Honeycombs',
-    'description': 'The open-source jQuery Honeycombs plugin allows developers to easily create a responsive, hexagon grid with their own content. Additionally, it supports full customization for the sizing, spacing, orientation, color, and flipping of each hexagon in the grid. The project is up and running on GitHub and has been favorited by several users.',
+    'description': 'The open-source jQuery Honeycombs plugin allows developers to easily create a responsive, hexagon grid with their own content. Additionally, it supports full customization for the sizing, spacing, orientation, color, and flipping of each hexagon in the grid.',
     'image': 'honeycombs.png',
     'skills': [
       'HTML',

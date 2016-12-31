@@ -82,13 +82,21 @@ layout: default
           </ul>
         </div>
         {% endfor %}
-        <div class="home-skills-card-back">&nbsp;
-<!--           <h3>lorem</h3>
-          <ul><li>adf</li>
-          <li>sdf</li>
-          <li>sdf</li></ul> -->
-        </div>
         <div class="home-skills-card-back"></div>
+        <div class="home-skills-card-back"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-blog">
+    <div class="container">
+      <div class="home-blog-header-box">Blog</div>
+      <div class="row">
+        <div class="home-blog-posts">
+          {% for post in site.posts %}
+          <div class="home-blog-post"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </section>
@@ -96,7 +104,7 @@ layout: default
   <section class="home-projects">
     <div class="container">
       <div class="home-projects-header-box">Projects</div>
-      <div class="row">
+      <div class="home-projects-wrapper">
         {% for project in site.data.projects %}
         <div class="home-projects-project">
           <a href="">
@@ -115,6 +123,17 @@ layout: default
         </div>
         {% endfor %}
 
+      </div>
+    </div>
+  </section>
+
+  <section class="home-adventures">
+    <div class="container">
+      <div class="home-adventures-header-box">Adventures</div>
+      <div class="home-adventures-images">
+        {% for adventure in site.data.adventures %}
+        <div style="background-image: url('assets/img/my-photos/{{ adventure }}.jpg');" class="home-adventures-images-img"></div>
+        {% endfor %}
       </div>
     </div>
   </section>

@@ -9,4 +9,13 @@
 @import 'vars';
 @import 'mixins';
 @import 'components/navbar';
-@import 'components/home';
+@import 'components/hero';
+@import 'components/skills';
+@import 'components/projects';
+@import 'components/adventures';
+@import 'components/blog';
+
+.home {
+  font-family: $raleway;
+}
+

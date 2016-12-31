@@ -1,0 +1,85 @@
+.home-blog {
+  background-color: $pillow-grey;
+  padding: 30px 15px;
+
+  &-header-box {
+    @include header-box($pokeball-red);
+  }
+
+  &-posts {
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 20px;
+      height: 100%;
+      width: 4px;
+      background: $midnight-blue;
+    }
+  }
+
+  &-post {
+    display: block;
+    overflow: hidden;
+    position: relative;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+    }
+
+    &:before {
+      background-color: $pillow-grey;
+      border: 4px solid $pillow-grey;
+      height: 20px;
+      left: 10px;
+      margin-top: -5px;
+      width: 20px;
+    }
+
+    &:after {
+      background-color: $midnight-blue;
+      border-radius: 6px;
+      height: 6px;
+      left: 19px;
+      margin-top: 5px;
+      transition: all 0.2s ease;
+      width: 6px;
+    }
+
+    &:nth-child(even) {
+      
+      &:before {
+        border: 2px solid $midnight-blue;
+        border-radius: 20px;
+      }
+
+    }
+
+    &:hover {
+      &:after {
+        left: 16px;
+        height: 12px;
+        width: 12px;
+        margin-top: 1px;
+      }   
+    }
+
+    a, a:visited, a:link, a:active {
+      color: $midnight-blue;
+      display: block;
+      padding: 25px 20px 15px 75px;
+      text-decoration: none;
+
+      &:after {
+        content: '';
+        @include partial-underline($pokeball-red);
+      }
+
+    }
+
+  }
+}

@@ -1,0 +1,67 @@
+.home-projects {
+  background-color: $midnight-blue;
+  padding: 50px 15px;
+
+  &-header-box {
+    @include header-box($pacific-blue);
+    margin-bottom: 30px;
+  }
+
+  &-wrapper {
+    @extend .row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-project {
+    @extend .six;
+    @extend .columns;
+    background-color: $white;
+    margin: 20px 0;
+
+    &:last-of-type {
+      margin-left: auto;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    &-content {
+      padding: 15px;
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          border: 1px solid $black;
+          border-radius: 20px;
+          display: inline-block;
+          font-size: 12px;
+          margin: 3px 3px 5px 0;
+          padding: 0 10px;
+        }
+      }
+
+      &-title {
+        font-size: 24px;
+        margin-top: 10px;
+
+        &:after {
+          content: '';
+          @include partial-underline($avocado-green);
+        }
+      }
+
+      &-date {
+        color: $avocado-green;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    }
+  }
+}
