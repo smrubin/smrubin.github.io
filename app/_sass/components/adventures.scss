@@ -1,9 +1,28 @@
 .home-adventures {
-  background-color: $pillow-grey;
-  padding: 50px 15px;
+  // padding: 80px 15px;
+  padding: 80px 0;
+  background-color: #C7C0A5;
+  background-image: linear-gradient(to right, $black 2px, transparent 2px), linear-gradient(to bottom, $black 2px, transparent 2px);
+  background-size: calc(25vw * 0.85) calc(25vw * 0.85);
+
+  background-position: calc((100vw - 85vw - 17px) / 2) 214.4px;
+
+
+  @media (min-width: 550px) {
+    background-size:calc(25vw * 0.8) calc(25vw * 0.8);
+    background-position: calc((100vw - 80vw - 17px) / 2) 214.4px;
+  }
+
+  @media (min-width: 1125px) {
+    background-size: 225px 225px;
+  }
+
+  @media (min-width: 1200px) {
+    background-position: calc((100vw - 960px - 17px) / 2) 214.4px; //computed - actual height
+  }
 
   &-header-box {
-    @include header-box($pokeball-red);
+    @include header-box($pacific-blue);
   }
 
   &-images {
@@ -12,13 +31,71 @@
     flex-wrap: wrap;
     margin: 40px 0;
 
+    @include mobile {
+      justify-content: center;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 25%;
+      max-width: 225px;
+      position: relative;
+
+      // @include mobile {
+      //   width: 50%;
+      // }
+
+      &:first-of-type {
+        &:after {
+          content: 'DOUBLE WORD SCORE';
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: $black;
+          background-color: #F2B4A9;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          left: -100%;
+          top: 0;
+          font-size: 28px;
+          word-spacing: 225px; 
+        }
+      }
+
+      &:last-of-type {
+        &:after {
+          content: 'DOUBLE WORD SCORE';
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          color: $black;
+          background-color: #F2B4A9;
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          left: 100%;
+          top: 0;
+          font-size: 28px;
+          word-spacing: 225px; 
+        }
+      }
+    }
+
     &-img {
-      background-position: center center;
-      background-size: coover;
-      display: inline-block;
-      margin: 3px;
-      height: 225px;
-      width: 225px;
+      background-color: #f5cf90;
+      margin: 8px;
+      padding: 10px;
+      box-shadow: 0 1.125mm 0.75mm -0.5mm rgba(0, 0, 0, 0.4);
+      border-top: 0.75mm solid rgba(255, 255, 255, 0.45);
+      border-left: 1px solid rgba(255, 255, 255, 0.25);
+      border-right: 1px solid rgba(0, 0, 0, 0.15);
+      border-bottom: 1.25mm solid rgba(0, 0, 0, 0.3);
+      border-radius: 0.75mm;
     }
   }
 

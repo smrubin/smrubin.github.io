@@ -1,3 +1,130 @@
+.home-banner {
+  height: calc(100vh - 200px);
+  width: 100%;
+  position: relative;
+
+  background-color: $white;
+
+  iframe {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    opacity: 0.9;
+  }
+
+  .container {
+    max-width: none;
+    height: 100%;
+
+    > .row {
+      height: 100%;
+    }
+  }
+
+  &-bio {
+    @extend .eight;
+    @extend .columns;
+
+    height: 100%;
+    float: right;
+    display: flex;
+    // align-items: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 50px;
+
+    &-header {
+      color: $black;
+      font-size: 28px;
+
+      @include header-box($black);
+
+      position: absolute;
+      top: 60%;
+      right: 20%;
+      
+      @include mobile {
+        position: static;
+      } 
+
+      border-width: 5px;
+      font-size: 42px;
+      // margin-top: 200px;
+      font-weight: bold;
+    }
+
+    &-content {
+      @extend .row;
+
+      font-size: 20px;
+
+      .columns { // TODO: figure out why this is needed
+        margin-left: 0;
+      }
+
+      &-header {
+        color: $pokeball-red;
+        margin-top: 30px;  
+      }
+
+      &-value {
+        color: $black;
+
+        &:after {
+          content: '';
+          @include partial-underline($pokeball-red);
+        }
+      }
+    }
+
+    &-social {
+      @extend .twelve;
+      @extend .columns;
+      margin: 30px 0 0;
+
+      &-tile {
+        border: 2px solid $pokeball-red;
+        border-radius: 50%;
+        color: $pokeball-red;
+        display: inline-flex;
+        align-items: center;
+        font-size: 24px;
+        height: 25px;
+        margin-bottom: 30px;
+        margin-right: 15px;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        width: 25px;
+
+        &:hover, &:link, &:visited, &:active {
+          color: $pokeball-red;
+          text-decoration: none;
+        }
+      }
+    }
+
+  }
+}
+
+.home-blurb {
+  background-color: $midnight-blue;
+  border-bottom: 3px solid $pillow-grey;
+
+  &-container {
+    @extend .container;
+    background-color: $pillow-grey;
+    border-radius: 20px;
+    padding: 30px 30px;
+    position: relative;
+    top: -80px;
+    margin-bottom: 50px;
+  }
+}
+
 .home-hero {
   background-color: $pillow-grey;
   font-size: 18px;
@@ -20,6 +147,11 @@
 
     &-box {
       @include header-box($pokeball-red);
+    }
+
+    &-header {
+      color: $pokeball-red;
+      font-size: 28px;
     }
 
     &-content {
@@ -46,13 +178,24 @@
       margin: 30px 0 0;
 
       &-tile {
-        @include header-box($pokeball-red);
+        border: 2px solid $pokeball-red;
+        border-radius: 50%;
+        color: $pokeball-red;
         display: inline-flex;
         align-items: center;
+        font-size: 24px;
         height: 25px;
+        margin-bottom: 30px;
         margin-right: 15px;
+        padding: 10px;
+        text-align: center;
         text-decoration: none;
         width: 25px;
+
+        &:hover, &:link, &:visited, &:active {
+          color: $pokeball-red;
+          text-decoration: none;
+        }
       }
     }
 

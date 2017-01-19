@@ -1,12 +1,13 @@
 .home-blog {
-  background-color: $pillow-grey;
-  padding: 30px 15px;
+  background-image: linear-gradient(rgba(46,46,46,0.5), rgba(46,46,46,0.8));
+  padding: 80px 15px;
 
   &-header-box {
-    @include header-box($pokeball-red);
+    @include header-box($pacific-blue);
   }
 
   &-posts {
+    margin: 30px 0;
     position: relative;
 
     &:before {
@@ -16,12 +17,13 @@
       left: 20px;
       height: 100%;
       width: 4px;
-      background: $midnight-blue;
+      background: $white;
     }
   }
 
   &-post {
     display: block;
+    font-size: 18px;
     overflow: hidden;
     position: relative;
 
@@ -32,8 +34,9 @@
     }
 
     &:before {
-      background-color: $pillow-grey;
-      border: 4px solid $pillow-grey;
+      background-color: #4C423F;
+      border: 2px solid $white;
+      border-radius: 20px;
       height: 20px;
       left: 10px;
       margin-top: -5px;
@@ -41,42 +44,30 @@
     }
 
     &:after {
-      background-color: $midnight-blue;
+      background-color: $white;
       border-radius: 6px;
       height: 6px;
       left: 19px;
       margin-top: 5px;
-      transition: all 0.2s ease;
       width: 6px;
     }
 
-    &:nth-child(even) {
-      
-      &:before {
-        border: 2px solid $midnight-blue;
-        border-radius: 20px;
-      }
-
-    }
-
-    &:hover {
-      &:after {
-        left: 16px;
-        height: 12px;
-        width: 12px;
-        margin-top: 1px;
-      }   
-    }
-
     a, a:visited, a:link, a:active {
-      color: $midnight-blue;
+      color: $white;
       display: block;
       padding: 25px 20px 15px 75px;
       text-decoration: none;
 
+      &:hover {
+        &:after {
+          width: 60px;
+        }
+      }
+
       &:after {
         content: '';
-        @include partial-underline($pokeball-red);
+        @include partial-underline($pacific-blue);
+        transition: width 0.5s;
       }
 
     }

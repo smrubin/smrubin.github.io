@@ -1,0 +1,44 @@
+.home-contact {
+  background-color: $pillow-grey;
+  padding: 50px 15px 30px;
+
+  &-header-box {
+    @include header-box($pokeball-red);
+  }
+
+  &-wrapper {
+    @extend .six;
+    @extend .columns;
+    @include mobile {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  &-item {
+    font-size: 22px;
+    margin: 10px 0;
+
+    &:first-of-type {
+      @include mobile {
+        margin-top: 0;
+      }
+    }
+
+    i {
+      margin-right: 10px;
+    }
+
+    a, a:visited, a:active, a:link {
+      color: $black;
+      text-decoration: none;
+    }
+
+    &:hover {
+      a, a:visited, a:active, a:link {
+        color: $pokeball-red;
+        text-decoration: none;
+      }
+    }
+  }
+}

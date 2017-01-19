@@ -11,11 +11,18 @@
 @import 'components/navbar';
 @import 'components/hero';
 @import 'components/skills';
-@import 'components/projects';
-@import 'components/adventures';
 @import 'components/blog';
+@import 'components/projects';
+@import 'components/recs';
+@import 'components/adventures';
+@import 'components/contact';
+@import 'components/footer';
 
 .home {
+  background-image: url('../assets/img/bg-1.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
   font-family: $raleway;
 }
 

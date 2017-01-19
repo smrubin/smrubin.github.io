@@ -1,7 +1,7 @@
 .home-skills {
   background-color: $midnight-blue;
   overflow-x: hidden;
-  padding: 50px 15px;
+  padding: 80px 15px;
 
   &-header-box {
     @include header-box($pacific-blue);
@@ -37,7 +37,6 @@
       }
     }
 
-
     &-title {
       color: $pokeball-red;
       font-size: 22px;
@@ -59,11 +58,38 @@
       background-image:
       radial-gradient($midnight-blue 9px, transparent 10px),        
       repeating-radial-gradient($midnight-blue 0, $midnight-blue 4px, transparent 5px, transparent 20px, $midnight-blue 21px, $midnight-blue 25px, transparent 26px, transparent 50px);    
-      background-size: 30px 30px, 90px 90px; 
+      background-size: 32px 32px, 96px 96px; 
       background-position: 0 0;
       border: 10px solid $pillow-grey;
+      height: calc(46px * 8 - 4px);
       padding: 10px;
+      position: relative;
       transform: rotate(3.6deg);
+
+      &:last-of-type {
+        @include mobile {
+          margin-top: calc(-46px * 7);
+          transform: rotate(-3.6deg);
+        }
+      }
+
+      &:after {
+        content: '';
+        background-color: $pillow-grey;
+        background-image: url('../assets/img/logo/logo-black-clear.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 40px 40px;
+        border: 2px solid $black;
+        border-radius: 50%;
+        height: 80px;
+        left: 50%;
+        margin-top: -42px;
+        margin-left: -40px;
+        position: absolute;
+        top: 50%;
+        width: 80px;
+      }
     }
 
   }

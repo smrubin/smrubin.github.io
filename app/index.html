@@ -3,20 +3,75 @@ layout: default
 ---
 
 <div class="home">
-  
+
   <nav class="navbar">
     <ul>
       <li><a href="">Journey</a></li>
       <li><a href="">Skills</a></li>
-      <li><a href="">Projet</a></li>
+      <li><a href="">Projects</a></li>
       <li><a href="">
         <img src="assets/img/logo/logo-black-clear.png" alt="">
       </a></li>
       <li><a href="">Blog</a></li>
-      <li><a href="">Contact</a></li>
+      <li><a href="">Recommendations</a></li>
       <li><a href="">Impossible List</a></li>
     </ul>
   </nav>
+
+  <section class="home-banner">
+    <iframe
+      frameborder="0"
+      width="100%"
+      height="100%"
+      scrolling="no"
+      allowfullscreen    
+      src="vrview/index.html?image=/assets/img/tmp.jpg">
+    </iframe>
+
+    <div class="home-banner-bio-header">Hi There, I'm Sam</div>
+  </section>
+
+  <section class="home-blurb">
+    <div class="home-blurb-container">
+          <div class="home-banner-bio-content">
+            <div class="twelve columns">
+              <div class="home-hero-bio-box">About Me</div>
+            </div>
+            <div class="six columns">
+              <div class="home-banner-bio-content-header">Software Engineer at</div>
+              <div class="home-banner-bio-content-value">Deloitte Digital</div>
+              <div class="home-banner-bio-content-header">Degree in</div>
+              <div class="home-banner-bio-content-value">Systems Engineering, University of Virginia</div>
+            </div>
+            <div class="six columns">
+              <div class="home-banner-bio-content-header">Writing Code for</div>
+              <div class="home-banner-bio-content-value">8+ years</div>
+              <div class="home-banner-bio-content-header">Hobbies include</div>
+              <div class="home-banner-bio-content-value">Skiing, Hiking, VR</div>
+            </div>
+            <div class="home-banner-bio-social">
+              <a class="home-banner-bio-social-tile" href="mailto:sam.rubin@comcast.net">
+                <i class="fa fa-envelope-o"></i>
+              </a>
+              <a class="home-banner-bio-social-tile" href="https://github.com/smrubin">
+                <i class="fa fa-github-alt"></i>
+              </a>
+              <a class="home-banner-bio-social-tile" href="https://linkedin.com/in/samrubin1">
+                <i class="fa fa-linkedin"></i>
+              </a>
+              <a class="home-banner-bio-social-tile" href="https://stackoverflow.com/users/6136026/smrubin">
+                <i class="fa fa-stack-overflow"></i>
+              </a>
+              <a class="home-banner-bio-social-tile" href="#">
+                <i class="fa fa-file-pdf-o"></i>
+              </a>
+              <a class="home-banner-bio-social-tile" href="https://twitter.com/sammrubin">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </div>
+          </div>      
+    </div>
+  </section>
 
   <section class="home-hero">
     <div class="container">
@@ -26,7 +81,7 @@ layout: default
           <img src="assets/img/me.jpg" alt="Sam Rubin">
         </div>
         <div class="home-hero-bio">
-          <div class="home-hero-bio-box">Sam Rubin</div>
+          <div class="home-hero-bio-header">Hi There, I'm Sam</div>
           <div class="home-hero-bio-content">
             <div class="six columns">
               <div class="home-hero-bio-content-header">Software Engineer at</div>
@@ -41,26 +96,26 @@ layout: default
               <div class="home-hero-bio-content-value">Skiing, Hiking, VR</div>
             </div>
             <div class="home-hero-bio-social">
-              <a class="home-hero-bio-social-tile" href="#">
+              <a class="home-hero-bio-social-tile" href="mailto:sam.rubin@comcast.net">
                 <i class="fa fa-envelope-o"></i>
               </a>
-              <a class="home-hero-bio-social-tile" href="#">
+              <a class="home-hero-bio-social-tile" href="https://github.com/smrubin">
                 <i class="fa fa-github-alt"></i>
               </a>
-              <a class="home-hero-bio-social-tile" href="#">
+              <a class="home-hero-bio-social-tile" href="https://linkedin.com/in/samrubin1">
                 <i class="fa fa-linkedin"></i>
               </a>
-              <a class="home-hero-bio-social-tile" href="#">
+              <a class="home-hero-bio-social-tile" href="https://stackoverflow.com/users/6136026/smrubin">
                 <i class="fa fa-stack-overflow"></i>
               </a>
               <a class="home-hero-bio-social-tile" href="#">
                 <i class="fa fa-file-pdf-o"></i>
               </a>
-              <a class="home-hero-bio-social-tile" href="#">
+              <a class="home-hero-bio-social-tile" href="https://twitter.com/sammrubin">
                 <i class="fa fa-twitter"></i>
               </a>
             </div>
-
+          
           </div>
         </div>
 
@@ -107,9 +162,9 @@ layout: default
       <div class="home-projects-wrapper">
         {% for project in site.data.projects %}
         <div class="home-projects-project">
-          <a href="">
+          <!-- <a href="{{ project.url }}" target="_blank" rel="noopener"> -->
             <img src="assets/img/projects/{{ project.image }}" alt="">
-          </a>
+          <!-- </a> -->
           <div class="home-projects-project-content">
             <h3 class="home-projects-project-content-title">{{ project.title }}</h3>
             <p>{{ project.description }}</p>
@@ -122,8 +177,29 @@ layout: default
           </div>
         </div>
         {% endfor %}
-
       </div>
+    </div>
+  </section>
+
+  <section class="home-recs">
+    <div class="container">
+      <div class="home-recs-header-box">Recommendations</div>
+
+      <div class="home-recs-device">
+        <div class="home-recs-device-screen">
+              <div class="row">
+                {% for rec in site.data.recs %}
+                <div class="home-recs-rec">
+                  <!-- <img src="assets/img/recs/{{ rec.img }}.png" alt="{{ rec.name }}" class="home-recs-rec-img"> -->
+                  <img src="http://placekitten.com/20/20" class="home-recs-rec-img">
+                  <div class="home-recs-rec-bubble">{{ rec.rec }}</div>
+                </div>
+                {% endfor %}
+              </div>          
+        </div>
+        <div class="home-recs-device-button"></div>
+      </div>
+
     </div>
   </section>
 
@@ -132,10 +208,49 @@ layout: default
       <div class="home-adventures-header-box">Adventures</div>
       <div class="home-adventures-images">
         {% for adventure in site.data.adventures %}
-        <div style="background-image: url('assets/img/my-photos/{{ adventure }}.jpg');" class="home-adventures-images-img"></div>
+        <div class="home-adventures-images-container">
+          <img src="assets/img/my-photos/{{ adventure }}.jpg" class="home-adventures-images-img">
+        </div>
+        <!-- <div style="background-image: url('assets/img/my-photos/{{ adventure }}.jpg');" class="home-adventures-images-img"></div> -->
         {% endfor %}
       </div>
     </div>
   </section>
+
+  <section class="home-contact">
+    <div class="container">
+      <div class="home-contact-header-box">Contact</div>
+      <div class="row">
+        <div class="home-contact-wrapper">
+          <div class="home-contact-item">
+            <a href="mailto:sam.rubin@comcast.net"><i class="fa fa-at"></i>sam.rubin@comcast.net</a>
+          </div>
+          <div class="home-contact-item">
+            <a href="https://github.com/smrubin"><i class="fa fa-github-alt"></i>github.com/smrubin</a>
+          </div>
+          <div class="home-contact-item">
+            <a href="https://linkedin.com/in/samrubin1"><i class="fa fa-linkedin"></i>linkedin.com/in/samrubin1</a>
+          </div>
+        </div>
+        <div class="home-contact-wrapper">
+          <div class="home-contact-item">
+            <a href="https://stackoverflow.com/users/6136026/smrubin"><i class="fa fa-stack-overflow"></i>stackoverflow.com/users/6136026</a>
+          </div>
+          <div class="home-contact-item">
+            <a href="#"><i class="fa fa-file-pdf-o"></i>.pdf resume</a>
+          </div>
+          <div class="home-contact-item">
+            <a href="https://twitter.com/sammrubin"><i class="fa fa-twitter"></i>twitter.com/sammrubin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <i class="fa fa-copyright"></i>&nbsp;&nbsp;Sam Rubin 2016
+    </div>
+  </footer>
 
 </div>

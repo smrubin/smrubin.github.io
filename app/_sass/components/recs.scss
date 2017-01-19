@@ -1,0 +1,115 @@
+.home-recs {
+  background-color: $pillow-grey;
+  padding: 80px 15px;
+
+  &-header-box {
+    @include header-box($pokeball-red);
+  }
+
+  &-device {
+    position: relative;
+    background: #202020;
+    border-radius: 45px;
+    height: 0;
+    padding-top: 75%;
+    width: 100%;
+
+    &:after {
+      content: '';
+      background-color: #3f3f3f;
+      border-radius: 50%;
+      height: 0;
+      margin-top: -0.75%;
+      padding-top: 1.5%;
+      position: absolute;
+      right: 4%;
+      top: 50%;
+      width: 1.5%;
+    }
+
+    &-screen {
+      background-color: #2f2f2f;
+      width: 82.5%;
+      height: 82.5%;
+      position: absolute;
+      top: 8.75%;
+      left: 8.75%;
+      animation: lighten 5s infinite alternate;
+    }
+
+    &-button {
+      background-color: #3f3f3f;
+      border-radius: 50%;
+      height: 0;
+      left: 1%;
+      margin-top: -3.5%;
+      padding-top: 7%;
+      position: absolute;
+      top: 50%;
+      width: 7%;
+
+      &:after {
+        content: '';
+        border: 2px solid #d7d7d7;
+        border-radius: 4px;
+        height: 40%;
+        left: 27.5%;
+        position: absolute;
+        top: 27.5%;
+        width: 40%;
+      }
+    }
+  }
+
+
+  &-rec {
+    @extend .nine;
+    @extend .columns;
+    clear: both;
+    display: flex;
+    align-items: flex-end;
+    margin: 15px 0;
+
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      align-self: flex-end;
+      float: right;
+
+      .home-recs-rec-bubble {
+        &:after {
+          left: 0;
+          right: -19px;
+        }
+      }
+    }
+
+    &-img {
+      border-radius: 50%;
+      display: inline-block;
+      height: 50px;
+      margin: 0 20px;
+      width: 50px;
+    }
+
+    &-bubble {
+      background-color: $pacific-blue;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      color: $midnight-blue;
+      display: inline-block;
+      padding: 15px;
+      position: relative;
+
+      &:after {
+        border: 18px solid transparent;
+        border-bottom-color: $pacific-blue;
+        border-radius: 20px / 10px;
+        bottom: 3px;
+        content: '';
+        left: -19px;
+        position: absolute;
+      }
+    }
+
+  }
+}

@@ -1,6 +1,6 @@
 .home-projects {
   background-color: $midnight-blue;
-  padding: 50px 15px;
+  padding: 80px 15px;
 
   &-header-box {
     @include header-box($pacific-blue);
@@ -17,12 +17,13 @@
   &-project {
     @extend .six;
     @extend .columns;
+    @include mobile {
+      margin-left: 0;
+      width: 100%;
+    }
+
     background-color: $white;
     margin: 20px 0;
-
-    &:last-of-type {
-      margin-left: auto;
-    }
 
     img {
       display: block;
