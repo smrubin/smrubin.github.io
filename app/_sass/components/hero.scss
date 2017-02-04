@@ -29,12 +29,15 @@
     height: 100%;
     float: right;
     display: flex;
-    // align-items: flex-start;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 
     margin-top: 50px;
+
+    &-box {
+      @include header-box($pokeball-red);
+    }
 
     &-header {
       color: $black;
@@ -52,7 +55,6 @@
 
       border-width: 5px;
       font-size: 42px;
-      // margin-top: 200px;
       font-weight: bold;
     }
 
@@ -114,90 +116,21 @@
   background-color: $midnight-blue;
   border-bottom: 3px solid $pillow-grey;
 
-  &-container {
-    @extend .container;
+  &-wrapper {
     background-color: $pillow-grey;
     border-radius: 20px;
-    padding: 30px 30px;
     position: relative;
     top: -80px;
-    margin-bottom: 50px;
-  }
-}
+    width: 80%;
+    margin: 0 auto 50px;
 
-.home-hero {
-  background-color: $pillow-grey;
-  font-size: 18px;
-  padding: 50px 15px;
-
-  &-img {
-    @extend .four;
-    @extend .columns;
-
-    height: 400px;
-
-    img {
-      height: 100%;
+    @include mobile {
+      width: 90%;
     }
   }
 
-  &-bio {
-    @extend .eight;
-    @extend .columns;
-
-    &-box {
-      @include header-box($pokeball-red);
-    }
-
-    &-header {
-      color: $pokeball-red;
-      font-size: 28px;
-    }
-
-    &-content {
-      @extend .row;
-
-      &-header {
-        color: $pokeball-red;
-        margin-top: 30px;
-      }
-
-      &-value {
-        color: $black;
-
-        &:after {
-          content: '';
-          @include partial-underline($pokeball-red);
-        }
-      }
-    }
-
-    &-social {
-      @extend .twelve;
-      @extend .columns;
-      margin: 30px 0 0;
-
-      &-tile {
-        border: 2px solid $pokeball-red;
-        border-radius: 50%;
-        color: $pokeball-red;
-        display: inline-flex;
-        align-items: center;
-        font-size: 24px;
-        height: 25px;
-        margin-bottom: 30px;
-        margin-right: 15px;
-        padding: 10px;
-        text-align: center;
-        text-decoration: none;
-        width: 25px;
-
-        &:hover, &:link, &:visited, &:active {
-          color: $pokeball-red;
-          text-decoration: none;
-        }
-      }
-    }
-
+  &-container {
+    @extend .container;
+    padding: 30px 30px;
   }
 }
