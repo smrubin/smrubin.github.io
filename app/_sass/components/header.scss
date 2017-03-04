@@ -1,0 +1,14 @@
+.home-header {
+  background-color: $pillow-grey;
+  border-top: 2px solid $midnight-blue;
+  padding: 15px 0;
+  text-align: center;
+
+  p {
+    margin-bottom: 5px;
+  }
+
+  @include desktop {
+    display: none;
+  }
+}

@@ -1,17 +1,17 @@
 [
   {
-    'name': 'Camron Workman',
-    'img': 'cworkman.png',
+    'name': 'Reggie  Dorsainvil',
+    'img': 'rdorsainvil.jpg',
+    'rec': 'It’s rare that you come across standout developer like Sam. I had the pleasure of working with Sam on a large Application Development project that utilized a number of different IBM Products. Sam, being the innovative Millennium on the team, he designed and developed a solution that positioned our program for future success. Sam was great team member that we were able to count on for any tasks. I truly appreciate Sam for his sharp development skills and being a great team player. Sam is an asset to any team and I look forward to working with Sam in the future.'
+  },
+  {
+    'name': 'Keith Cupples',
+    'img': 'jjohnson.jpg',
     'rec': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius, quaerat, accusamus hic vitae itaque praesentium at adipisci. Nemo doloribus fugit quo fugiat laboriosam, nulla officia, totam distinctio itaque eum!'
   },
   {
-    'name': 'Camron Workman',
-    'img': 'cworkman.png',
-    'rec': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius, quaerat, accusamus hic vitae itaque praesentium at adipisci. Nemo doloribus fugit quo fugiat laboriosam, nulla officia, totam distinctio itaque eum!'
-  },
-  {
-    'name': 'Camron Workman',
-    'img': 'cworkman.png',
-    'rec': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus eius, quaerat, accusamus hic vitae itaque praesentium at adipisci. Nemo doloribus fugit quo fugiat laboriosam, nulla officia, totam distinctio itaque eum!'
+    'name': 'Jamel Johnson',
+    'img': 'jjohnson.jpg',
+    'rec': 'Sam has level of professionalism and work ethic beyond his years, and I hope to work with him again. His initiative, ability to research, and his genuine interest/curiosity in new technology are just a few factors that contribute to Sam being a valuable team member. Whether it was building a complex component of an application, or planning a team social event, Sam always performed beyond expectations.'
   }
 ]

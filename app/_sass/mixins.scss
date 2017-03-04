@@ -26,3 +26,20 @@
   padding: 10px;
   text-align: center;
 }
+
+@mixin scrabble-tile($text, $color) {
+  content: '#{$text}';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $black;
+  background-color: $color;
+  position: absolute;
+  font-size: 28px;
+  word-spacing: 225px;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}

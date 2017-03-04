@@ -1,12 +1,11 @@
 .home-adventures {
-  // padding: 80px 15px;
   padding: 80px 0;
+  position: relative;
+  overflow: hidden;
   background-color: #C7C0A5;
   background-image: linear-gradient(to right, $black 2px, transparent 2px), linear-gradient(to bottom, $black 2px, transparent 2px);
   background-size: calc(25vw * 0.85) calc(25vw * 0.85);
-
   background-position: calc((100vw - 85vw - 17px) / 2) 214.4px;
-
 
   @media (min-width: 550px) {
     background-size:calc(25vw * 0.8) calc(25vw * 0.8);
@@ -22,7 +21,9 @@
   }
 
   &-header-box {
-    @include header-box($pacific-blue);
+    @include header-box($pokeball-red);
+    background-color: #C7C0A5;
+    margin-left: 15px;
   }
 
   &-images {
@@ -43,45 +44,63 @@
       max-width: 225px;
       position: relative;
 
-      // @include mobile {
-      //   width: 50%;
-      // }
-
       &:first-of-type {
         &:after {
-          content: 'DOUBLE WORD SCORE';
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          color: $black;
-          background-color: #F2B4A9;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          left: -100%;
-          top: 0;
-          font-size: 28px;
-          word-spacing: 225px; 
+          @include scrabble-tile('DOUBLE WORD SCORE', #F2B4A9);
+          height: calc(100% - 6px);
+          width: calc(100% - 3px);
+          left: calc(-100% + 3px);
+          top: 2px;
+        }
+      }
+
+      &:nth-of-type(3) {
+        &:after {
+          @include scrabble-tile('TRIPLE LETTER SCORE', #5CAECE);
+          height: calc(100% - 6px);
+          width: calc(100% - 3px);
+          top: calc(-100% + 6px);
+          left: 3px;
+        }
+      }
+
+      &:nth-of-type(5) {
+        &:after {
+          @include scrabble-tile('DOUBLE LETTER SCORE', #B6E1EA);
+          height: calc(100% - 6px);
+          width: calc(100% - 3px);
+          top: calc(100% - 6px);
+          left: calc(-100% + 3px);
+        }
+      }
+
+      &:nth-of-type(6) {
+        &:after {
+          @include scrabble-tile('TRIPLE LETTER SCORE', #5CAECE);
+          height: calc(100% - 6px);
+          width: calc(100% - 3px);
+          top: -2px;
+          left: 2px;
+        }
+      }
+
+      &:nth-of-type(7) {
+        &:after {
+          @include scrabble-tile('TRIPLE WORD SCORE', #E45356);
+          height: calc(100% - 6px);
+          width: calc(100% - 3px);
+          top: calc(100% - 6px);
+          left: 2px;
         }
       }
 
       &:last-of-type {
         &:after {
-          content: 'DOUBLE WORD SCORE';
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          color: $black;
-          background-color: #F2B4A9;
-          height: 100%;
-          width: 100%;
-          position: absolute;
-          left: 100%;
-          top: 0;
-          font-size: 28px;
-          word-spacing: 225px; 
+          @include scrabble-tile('DOUBLE WORD SCORE', #F2B4A9);
+          height: calc(100% - 6px);
+          width: calc(100% - 3px);
+          left: calc(100% + 3px);
+          top: -2px;
         }
       }
     }
@@ -96,6 +115,11 @@
       border-right: 1px solid rgba(0, 0, 0, 0.15);
       border-bottom: 1.25mm solid rgba(0, 0, 0, 0.3);
       border-radius: 0.75mm;
+      z-index: 1;
+
+      @include mobile {
+        padding: 4px;
+      }
     }
   }
 

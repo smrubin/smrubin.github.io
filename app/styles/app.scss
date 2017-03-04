@@ -9,19 +9,21 @@
 @import 'vars';
 @import 'mixins';
 @import 'components/navbar';
+@import 'components/header';
 @import 'components/hero';
 @import 'components/skills';
 @import 'components/blog';
 @import 'components/projects';
 @import 'components/recs';
 @import 'components/adventures';
+@import 'components/impossible';
 @import 'components/contact';
 @import 'components/footer';
 
 .home {
   background-image: url('../assets/img/bg-1.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-attachment: fixed;
   font-family: $raleway;
 }

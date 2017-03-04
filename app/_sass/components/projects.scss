@@ -64,7 +64,15 @@
           }
         }
 
-        a {
+        a, a:visited, a:hover, a:active {
+          text-decoration: none;
+        }
+
+        span {
+          color: $black;
+        }
+
+        i {
           font-size: 14px;
           padding-left: 5px;
           vertical-align: middle;
