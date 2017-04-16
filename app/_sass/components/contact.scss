@@ -6,32 +6,109 @@
     @include header-box($pokeball-red);
   }
 
-  &-wrapper {
-    @extend .six;
-    @extend .columns;
-    @include mobile {
-      margin-left: 0;
-      width: 100%;
+ &-device {
+    position: relative;
+    background: #202020;
+    border-radius: 45px;
+    height: 0;
+    padding-top: 75%;
+    width: 100%;
+
+    &:after {
+      content: '';
+      background-color: #3f3f3f;
+      border-radius: 50%;
+      height: 0;
+      margin-top: -0.75%;
+      padding-top: 1.5%;
+      position: absolute;
+      right: 4%;
+      top: 50%;
+      width: 1.5%;
+    }
+
+    &-screen {
+      // background-color: #2f2f2f;
+      background-image: url('../assets/img/ios_bg.jpeg');
+      background-size: cover;
+      width: 82.5%;
+      height: 82.5%;
+      position: absolute;
+      top: 8.75%;
+      left: 8.75%;
+      animation: lighten 5s infinite alternate;
+    }
+
+    &-button {
+      background-color: #3f3f3f;
+      border-radius: 50%;
+      height: 0;
+      left: 1%;
+      margin-top: -3.5%;
+      padding-top: 7%;
+      position: absolute;
+      top: 50%;
+      width: 7%;
+
+      &:after {
+        content: '';
+        border: 2px solid #d7d7d7;
+        border-radius: 4px;
+        height: 40%;
+        left: 27.5%;
+        position: absolute;
+        top: 27.5%;
+        width: 40%;
+      }
     }
   }
 
+
+
+
+  // &-wrapper {
+  //   @extend .four;
+  //   @extend .columns;
+  //   @include mobile {
+  //     margin-left: 0;
+  //     width: 100%;
+  //   }
+  // }
+
+  &-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    // align-items: flex-start;
+    // height: 100%;
+  }
+
   &-item {
-    font-size: 22px;
-    margin: 10px 0;
+    // @extend .four;
+    // @extend .columns;
+    display: inline-block;
+    width: 30%;
+    font-size: 18px;
+    margin: 30px 0;
+    text-align: center;
 
-    &:first-of-type {
-      @include mobile {
-        margin-top: 0;
-      }
+    @include mobile {
+      font-size: 14px;
     }
 
-    i {
-      margin-right: 10px;
-    }
+    // &:first-of-type {
+    //   @include mobile {
+    //     margin-top: 0;
+    //   }
+    // }
 
     a, a:visited, a:active, a:link {
-      color: $black;
+      color: $white;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
       text-decoration: none;
+      width: 70px;
     }
 
     &:hover {
@@ -40,5 +117,30 @@
         text-decoration: none;
       }
     }
+
+    &-img, &-img-custom {
+      display: inline-flex;
+      width: 100%;
+    }
+
+    &-img-custom {
+      background-color: $white;
+      border-radius: 8px;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+
+      img {
+        width: 70px;
+      }
+    }
+
+    &-text {
+      word-break: break-all;
+      // text-align: center;
+      // width: 70%;
+    }
+
+
   }
 }
