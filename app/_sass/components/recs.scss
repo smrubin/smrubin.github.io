@@ -24,7 +24,7 @@
         border-radius: 6px;
         height: 12px;
         position: absolute;
-        top: 14px;        
+        top: 14px;
         width: 12px;
       }
 
@@ -35,12 +35,12 @@
 
       &-min {
         background-color: #ffbe06;
-        left: 32px;        
+        left: 32px;
       }
 
       &-max {
         background-color: #16cc37;
-        left: 54px;        
+        left: 54px;
       }
     }
 
@@ -96,7 +96,7 @@
     }
 
     &-bubble {
-      background-color: #E2E1E9;
+      background-color: $storm-grey;
       border: 1px solid transparent;
       border-radius: 20px;
       color: $midnight-blue;
@@ -110,7 +110,7 @@
 
       &:after {
         border: 18px solid transparent;
-        border-bottom-color: #E2E1E9;
+        border-bottom-color: $storm-grey;
         border-radius: 20px / 10px;
         bottom: 3px;
         content: '';

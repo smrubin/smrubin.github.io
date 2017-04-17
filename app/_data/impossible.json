@@ -1,0 +1,199 @@
+[
+  {
+    'group': 'To Do',
+    'data': [
+      {
+        'title': 'Learn design skills and craft some art',
+        'epic': 'Professional',
+        'estimate': 5,
+        'number': 'SR-111'
+      },
+      {
+        'title': 'Sell my crafts online',
+        'epic': 'Professional',
+        'estimate': 5,
+        'number': 'SR-112'
+      },
+      {
+        'title': 'Adopt a dog',
+        'epic': 'Lifestyle',
+        'estimate': 13,
+        'number': 'SR-113'
+      },
+      {
+        'title': 'Read 10 books in a year',
+        'epic': 'Lifestyle',
+        'estimate': 3,
+        'number': 'SR-114'
+      },
+      {
+        'title': 'Run a half-marathon',
+        'epic': 'Lifestyle',
+        'estimate': 3,
+        'number': 'SR-115'
+      },
+      {
+        'title': 'Go sky-diving',
+        'epic': 'Lifestyle',
+        'estimate': 5,
+        'number': 'SR-116'
+      },
+      {
+        'title': 'Go skiing in the Alps',
+        'epic': 'Lifestyle',
+        'estimate': 5,
+        'number': 'SR-117'
+      },
+      {
+        'title': 'Perform a full rotation spin on skis',
+        'epic': 'Lifestyle',
+        'estimate': 5,
+        'number': 'SR-118'
+      },
+      {
+        'title': 'Complete a Tough Mudder',
+        'epic': 'Lifestyle',
+        'estimate': 5,
+        'number': 'SR-123'
+      },
+      {
+        'title': 'Vacation at Bora Bora...or another Pacific island, with my girlfriend!',
+        'epic': 'Travel',
+        'estimate': 13,
+        'number': 'SR-130'
+      }
+    ]
+  },
+  {
+    'group': 'In Progress',
+    'data': [
+      {
+        'title': 'Write 10 blog posts (5/10)',
+        'epic': 'Professional',
+        'estimate': 5,
+        'number': 'SR-103'
+      },
+      {
+        'title': 'Get 1,000 blog visits, all time',
+        'epic': 'Professional',
+        'estimate': 3,
+        'number': 'SR-105'
+      },
+      {
+        'title': 'Develop 5 websites in a year (3/5)',
+        'epic': 'Professional',
+        'estimate': 3,
+        'number': 'SR-106'
+      },
+      {
+        'title': 'Develop 5 web applications (2/5)',
+        'epic': 'Professional',
+        'estimate': 5,
+        'number': 'SR-107'
+      },
+      {
+        'title': 'Contribute to 5 GitHub repos (1/5)',
+        'epic': 'Professional',
+        'estimate': 5,
+        'number': 'SR-108'
+      },
+      {
+        'title': 'Become a master at Angular',
+        'epic': 'Professional',
+        'estimate': 13,
+        'number': 'SR-109'
+      },
+      {
+        'title': 'Shoot under a 90 in golf (99)',
+        'epic': 'Lifestyle',
+        'estimate': 13,
+        'number': 'SR-119'
+      },
+      {
+        'title': 'Go deep sea fishing and catch some fish (<s>Shark</s>, Sailfish, Swordfish, Barracuda, <s>Amberjack</s>, Wahoo, White Marlin, Blue Marlin, Dolphin Fish, <s>Snapper</s>, Grouper, Mackerel) (July 21, ',
+        'epic': 'Lifestyle',
+        'estimate': 8,
+        'number': 'SR-120'
+      },
+      {
+        'title': 'Travel to every continent',
+        'epic': 'Travel',
+        'estimate': 13,
+        'number': 'SR-124'
+      },
+      {
+        'title': 'Visit 20 countries (16/20)',
+        'epic': 'Travel',
+        'estimate': 8,
+        'number': 'SR-125'
+      },
+      {
+        'title': 'Visit every state (21/50)',
+        'epic': 'Travel',
+        'estimate': 8,
+        'number': 'SR-126'
+      }
+    ]
+  },
+  {
+    'group': 'Done',
+    'data': [
+      {
+        'title': 'Publish my personal website',
+        'epic': 'Professional',
+        'estimate': 8,
+        'number': 'SR-100'
+      },
+      {
+        'title': 'Setup a blog and write a post',
+        'epic': 'Professional',
+        'estimate': 3,
+        'number': 'SR-101'
+
+      },
+      {
+        'title': 'Write 5 blog posts (5/5)',
+        'epic': 'Professional',
+        'estimate': 5,
+        'number': 'SR-102'
+
+      },
+      {
+        'title': 'Get 100 blog visits, all time',
+        'epic': 'Professional',
+        'estimate': 2,
+        'number': 'SR-104'
+      },
+      {
+        'title': 'Get published in a journal',
+        'epic': 'Professional',
+        'estimate': 8,
+        'number': 'SR-110'
+      },
+      {
+        'title': 'Go white water rafting and navigate a Class V rapid',
+        'epic': 'Lifestyle',
+        'estimate': 5,
+        'number': 'SR-121'
+      },
+      {
+        'title': 'Take a backpacking trip through Europe',
+        'epic': 'Travel',
+        'estimate': 5,
+        'number': 'SR-127'
+      },
+      {
+        'title': 'Go to Vegas and crush it',
+        'epic': 'Travel',
+        'estimate': 3,
+        'number': 'SR-128'
+      },
+      {
+        'title': 'Go to Mardi Gras',
+        'epic': 'Travel',
+        'estimate': 3,
+        'number': 'SR-129'
+      }
+    ]
+  }
+]

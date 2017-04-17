@@ -7,6 +7,133 @@
     @include header-box($pokeball-red);
   }
 
+  &-board {
+    display: flex;
 
+    &-column {
+      display: flex;
+      flex-direction: column;
+      width: (100% / 3);
+      padding: 10px;
 
+      &.done {
+        .home-impossible-issue-number {
+          text-decoration: line-through;
+        }
+      }
+
+      &-title {
+        border-bottom: 3px solid $storm-grey;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0 0 10px;
+        padding-bottom: 10px;
+      }
+
+      &-list {
+        flex-grow: 1;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: $storm-grey;
+      }
+    }
+  }
+
+  &-issue {
+    min-height: 90px;
+    padding: 15px;
+    padding-left: 30px;
+    border: 1px solid $storm-grey;
+    background-color: $white;
+    font-size: 14px;
+    cursor: move;
+    margin: 0;
+    border-left: 5px solid #c9c8d0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    &.professional {
+      .home-impossible-issue-epic {
+        background-color: $avocado-green;
+      }
+    }
+
+    &.lifestyle {
+      .home-impossible-issue-epic {
+        background-color: $pacific-blue;
+      }
+    }
+
+    &.travel {
+      .home-impossible-issue-epic {
+        color: $white;
+        background-color: $pokeball-red;
+      }
+    }
+
+    &-info {
+      flex: 80%;
+    }
+
+    &:hover {
+      .home-impossible-issue-number {
+        border-bottom-color: $black;
+      }
+    }
+
+    &-title {
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+
+    &-number {
+      border-bottom: 1px solid transparent;
+      color: black;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 150ms ease-in;
+      margin: 0;
+      display: inline-block;
+    }
+
+    &-assignee {
+      border-radius: 4px;
+      height: 32px;
+      overflow: hidden;
+      width: 32px;
+      height: 32px;
+      text-align: right;
+      margin-left: auto;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    &-epic {
+      min-width: 22px;
+      padding: 0 5px;
+      background-color: $storm-grey;
+      border-radius: 8px;
+      font-size: 11px;
+      text-align: center;
+      height: 20px;
+      margin-top: auto;
+    }
+
+    &-estimate {
+      min-width: 22px;
+      padding: 0 5px;
+      background-color: $storm-grey;
+      border-radius: 8px;
+      font-size: 11px;
+      text-align: center;
+      height: 20px;
+      margin-left: auto;
+      margin-top: auto;
+    }
+  }
 }

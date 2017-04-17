@@ -184,14 +184,32 @@ layout: default
     <div class="container">
       <div class="home-impossible-header-box">Impossible List</div>
       <p>I've had a personal goals list, or bucket list, on my phone for a while now. But like a lot of ideas and other things, they get buried and forgotten, at least for a period of time. Thus, I have created my own <strong>Impossible List</strong>. The idea comes from Joel Runyon, who originally created the impossible list. It is meant to serve as an ever-changing, ever-evolving list of "impossible" goals and experiences that challenge you as an individual to go above and beyond what you originally thought possible. By sharing my impossible list, I hope it serves as a constant reminder to myself to achieve these items and I promise to keep it updated on my journey.</p>
-
-      <div class="home-impossible-device">
-        <div class="home-impossible-device-screen">
-
+      <div class="home-impossible-board">
+        {% for column in site.data.impossible %}
+        {% if column.group == 'Done' %}
+        <div class="home-impossible-board-column done">
+        {% else %}
+        <div class="home-impossible-board-column">
+        {% endif %}
+          <div class="home-impossible-board-column-title">{{ column.group }}</div>
+          <ul class="home-impossible-board-column-list">
+            {% for ticket in column.data %}
+            <li class="home-impossible-issue {{ ticket.epic | downcase }}">
+              <div class="home-impossible-issue-info">
+                <p class="home-impossible-issue-number">{{ ticket.number }}</p>
+                <p class="home-impossible-issue-title">{{ ticket.title }}</p>
+              </div>
+              <div class="home-impossible-issue-assignee">
+                <img src="assets/img/me - Copy.jpg" alt="Sam Rubin">
+              </div>
+              <div class="home-impossible-issue-epic">{{ ticket.epic }}</div>
+              <div class="home-impossible-issue-estimate">{{ ticket.estimate }}</div>
+            </li>
+            {% endfor %}
+          </ul>
         </div>
-        <div class="home-impossible-device-button"></div>
+        {% endfor %}
       </div>
-
     </div>
   </section>
 
@@ -199,10 +217,8 @@ layout: default
     <div class="container">
       <div class="home-contact-header-box">Contact</div>
 
-
       <div class="home-contact-device">
         <div class="home-contact-device-screen">
-
           <div class="home-contact-wrapper">
             <div class="home-contact-item">
               <a href="mailto:sam.rubin@comcast.net">
@@ -243,11 +259,9 @@ layout: default
               </a>
             </div>
           </div>
-
         </div>
         <div class="home-contact-device-button"></div>
       </div>
-
 
     </div>
   </section>
