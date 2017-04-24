@@ -28,3 +28,12 @@
   font-family: $raleway;
 }
 
+#funfact {
+  background-color: $white;
+  border-top: 2px solid $midnight-blue;
+  border-bottom: 2px solid $midnight-blue;
+  color: $black;
+  font-style: italic;
+  padding: 5px 15px;
+  text-align: center;
+}
