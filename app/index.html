@@ -156,8 +156,11 @@ layout: default
           <div class="row">
             {% for rec in site.data.recs %}
             <div class="home-recs-rec">
-              <img src="assets/img/recs/{{ rec.img }}" alt="{{ rec.name }}" class="home-recs-rec-img">
-              <div class="home-recs-rec-bubble">{{ rec.rec }}</div>
+              <div class="home-recs-rec-wrapper">
+                <img src="assets/img/recs/{{ rec.img }}" alt="{{ rec.name }}" class="home-recs-rec-img">
+                <div class="home-recs-rec-bubble">{{ rec.rec }}</div>
+              </div>
+              <div class="home-recs-rec-name">{{ rec. name }}</div>
             </div>
             {% endfor %}
           </div>
@@ -213,31 +216,31 @@ layout: default
     </div>
   </section>
 
-   <section class="home-contact">
-     <div class="container">
-       <div class="home-contact-header-box">Contact</div>
-       <div class="row">
-         <div class="home-contact-item">
-           <a href="mailto:sam.rubin@comcast.net"><i class="fa fa-at"></i>sam.rubin@comcast.net</a>
-         </div>
-         <div class="home-contact-item">
-           <a href="https://github.com/smrubin"><i class="fa fa-github-alt"></i>github.com/smrubin</a>
-         </div>
-         <div class="home-contact-item">
-           <a href="https://linkedin.com/in/samrubin1"><i class="fa fa-linkedin"></i>linkedin.com/in/samrubin1</a>
-         </div>
-         <div class="home-contact-item">
-           <a href="https://stackoverflow.com/users/6136026/smrubin"><i class="fa fa-stack-overflow"></i>stackoverflow.com/users/6136026</a>
-         </div>
-         <div class="home-contact-item">
-           <a href="#"><i class="fa fa-file-pdf-o"></i>.pdf resume</a>
-         </div>
-         <div class="home-contact-item">
-           <a href="https://twitter.com/sammrubin"><i class="fa fa-twitter"></i>twitter.com/sammrubin</a>
-         </div>
-       </div>
-     </div>
-</section>
+  <section class="home-contact">
+    <div class="container">
+      <div class="home-contact-header-box">Contact</div>
+      <div class="row">
+        <div class="home-contact-item">
+         <a href="mailto:sam.rubin@comcast.net"><i class="fa fa-at"></i>sam.rubin@comcast.net</a>
+        </div>
+        <div class="home-contact-item">
+         <a href="https://github.com/smrubin"><i class="fa fa-github-alt"></i>github.com/smrubin</a>
+        </div>
+        <div class="home-contact-item">
+         <a href="https://linkedin.com/in/samrubin1"><i class="fa fa-linkedin"></i>linkedin.com/in/samrubin1</a>
+        </div>
+        <div class="home-contact-item">
+         <a href="https://stackoverflow.com/users/6136026/smrubin"><i class="fa fa-stack-overflow"></i>stackoverflow.com/users/6136026</a>
+        </div>
+        <div class="home-contact-item">
+         <a href="#"><i class="fa fa-file-pdf-o"></i>.pdf resume</a>
+        </div>
+        <div class="home-contact-item">
+         <a href="https://twitter.com/sammrubin"><i class="fa fa-twitter"></i>twitter.com/sammrubin</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <div id="funfact"></div>
 

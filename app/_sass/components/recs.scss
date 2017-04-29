@@ -56,13 +56,21 @@
     @extend .columns;
     clear: both;
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-end;
     margin: 15px 0;
 
     &:nth-child(2n) {
-      flex-direction: row-reverse;
       align-self: flex-end;
       float: right;
+
+      .home-recs-rec-wrapper {
+        flex-direction: row-reverse;
+      }
+
+      .home-recs-rec-name {
+        text-align: right;
+      }
 
       .home-recs-rec-bubble {
         background-color: #31A3F9;
@@ -79,6 +87,11 @@
           margin-right: 0;
         }
       }
+    }
+
+    &-wrapper {
+      display: flex;
+      align-items: flex-end;
     }
 
     &-img {
@@ -117,6 +130,11 @@
         left: -19px;
         position: absolute;
       }
+    }
+
+    &-name {
+      margin: 5px 20px;
+      width: 100%;
     }
 
   }
