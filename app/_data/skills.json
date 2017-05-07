@@ -18,8 +18,8 @@
       'Node.js',
       'Express',
       'MySQL',
-      'AWS (RDS, S3, Data Pipeline)',
-      'AWS (EC2, Lambda)',
+      'MongoDB',
+      'AWS (RDS, S3, EC2, Lambda)',
       'Apache Solr',
       'Firebase',
       'Java',
@@ -31,13 +31,14 @@
     'title': 'Tools & Tech',
     'skills': [
       'Git',
-      'Gulp',
-      'Yeoman',
-      'npm',
-      'AWS (Route 53, IAM, WorkMail)',
+      'Gulp / Grunt / Webpack',
+      'Docker',
+      'Jenkins',
+      'nginx',
+      'Bash Scripting',
+      'AWS (Route 53, IAM)',
       'Browserify',
       'JIRA',
-      'Google Analytics / UTM'
     ]
   }
 ]

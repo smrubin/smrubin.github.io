@@ -9,7 +9,7 @@
           window.location.protocol = "https";
   </script>
 
-  <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title> 
+  <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
 
   <!-- Regular Meta Info -->
   <meta charset="utf-8">
@@ -43,30 +43,27 @@
   <meta name="twitter:site" content="@sammrubin">
   <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.comments %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{site.description}}{% endif %}">
-  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/preview.PNG"> 
+  <meta name="twitter:image" content="{{ site.url }}{{ site.baseurl }}/img/preview.PNG">
 
   <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
+
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" href="{{site.baseurl}}/css/vendor/normalize.css"> -->
-  <!-- <link rel="stylesheet" href="{{site.baseurl}}/css/vendor/simple-grid.css"> -->
   <link rel="stylesheet" href="{{site.baseurl}}/styles/app.css">
 
 
   <!--[if lt IE 9 ]><script src="{{site.baseurl}}/js/vendor/modernizr-2.8.3.min.js"></script><![endif]-->
 </head>
 
-<body class="site">
+<body>
   <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-  <main class="site-content">
+  <main>
       {{content}}
   </main>
-  
-  <!--[if gt IE 8]><!><script src="{{site.baseurl}}/js/vendor/modernizr-2.8.3.min.js"></script><!<![endif]-->
+
   <script src="{{site.baseurl}}/js/app.js"></script>
-  <!-- <script src="//storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script> -->
 
   <script>
       window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;

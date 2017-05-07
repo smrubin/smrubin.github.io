@@ -121,10 +121,14 @@ layout: default
           <img src="assets/img/projects/{{ project.image }}" alt="{{ project.title }}">
           <div class="home-projects-project-content">
             <h3 class="home-projects-project-content-title">
+              {% if project.url %}
               <a href="{{ project.url }}" target="_blank" rel="noopener">
                 <span>{{ project.title }}</span>
                 <i class="fa fa-external-link"></i>
               </a>
+              {% else %}
+              <span>{{ project.title }}</span>
+              {% endif %}
             </h3>
             <p>{{ project.description }}</p>
             <ul>
