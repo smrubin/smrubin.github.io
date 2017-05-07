@@ -10,11 +10,19 @@
   &-board {
     display: flex;
 
+    @include mobile {
+      flex-wrap: wrap;
+    }
+
     &-column {
       display: flex;
       flex-direction: column;
       width: (100% / 3);
       padding: 10px;
+
+      @include mobile {
+        width: 100%;
+      }
 
       &.done {
         .home-impossible-issue-number {
@@ -100,16 +108,14 @@
 
     &-assignee {
       border-radius: 4px;
-      height: 32px;
       overflow: hidden;
-      width: 32px;
-      height: 32px;
       text-align: right;
       margin-left: auto;
+      width: 20%;
 
       img {
-        height: 100%;
-        width: 100%;
+        width: 32px;
+        height: 32px;
       }
     }
 

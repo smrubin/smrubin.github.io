@@ -19,8 +19,7 @@ layout: default
   <header class="home-header">
     <h3>Hi There, I'm Sam</h3>
     <p>Full Stack Software Engineer</p>
-    <p>Skier</p>
-    <p>Dog Lover</p>
+    <p>Lover of skiing, dogs, and all things web</p>
   </header>
 
   <section class="home-banner">
@@ -185,8 +184,8 @@ layout: default
 
   <section id="impossible" class="home-impossible">
     <div class="container">
-      <div class="home-impossible-header-box">Impossible List</div>
-      <p>I've had a personal goals list, or bucket list, on my phone for a while now. But like a lot of ideas and other things, they get buried and forgotten, at least for a period of time. Thus, I have created my own <strong>Impossible List</strong>. The idea comes from Joel Runyon, who originally created the impossible list. It is meant to serve as an ever-changing, ever-evolving list of "impossible" goals and experiences that challenge you as an individual to go above and beyond what you originally thought possible. By sharing my impossible list, I hope it serves as a constant reminder to myself to achieve these items and I promise to keep it updated on my journey.</p>
+      <div class="home-impossible-header-box">Impossible Board</div>
+      <p>I've had a personal goals list, or bucket list, on my phone for a while now. But like a lot of ideas and other things, they get buried and forgotten, at least for a period of time. Thus, I have created my own <strong>Impossible Board</strong>. The idea is a Kanban-board-esque spinoff of the Impossible List, originally created by Joel Runyon. It is meant to serve as an ever-changing, ever-evolving list of "impossible" goals and experiences that challenge you as an individual to go above and beyond what you originally thought possible. By sharing my impossible board, I hope it serves as a constant reminder to myself to achieve these items on my journey.</p>
       <div class="home-impossible-board">
         {% for column in site.data.impossible %}
         {% if column.group == 'Done' %}

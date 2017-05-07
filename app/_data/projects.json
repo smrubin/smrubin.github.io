@@ -1,7 +1,7 @@
 [
   {
     'title': 'ZCANPR',
-    'description': 'A new face for the Zika Contraception Access Network (Z-CAN)- a network which helps to provide information about the Zika virus to women in Puerto Rico. A full-stack, single-page web application built on Angular, Node, MySQL, and AWS.',
+    'description': 'A new face for the Zika Contraception Access Network (Z-CAN)- a network which helps to provide information about the Zika virus to women in Puerto Rico. Allows network providers to login, upload forms, and to download parsed form data in a viewable formats. A full-stack, single-page web application built on Angular, Node, MySQL, and a HIPAA-compliant AWS setup.',
     'url': 'https://zcanpr.org',
     'image': 'zcanpr.png',
     'skills': [
@@ -18,19 +18,21 @@
       'AWS EC2',
       'AWS S3',
       'AWS Lambda',
+      'AWS Cognito',
       'AWS DataPipeline',
       'AWS IAM',
       'Google Maps API',
       'Gulp',
+      'Webpack',
       'Git',
       'JIRA'
     ],
-    'date': 'November - December 2016'
+    'date': 'November 2016 - May 2017'
   },
   {
     'title': 'NIEM CCP',
-    'description': 'A Community Collaboration Project for NIEM (National Information Exchange Model) that allows customers to search over 10,000 objects in the model database. The web application back-end ingested XML Schema Definitions (XSDs) via Apache Solr to allow the Angular front-end to search, filter, and retrieve via APIs.',
-    'url': '#',
+    'description': 'A Community Collaboration Project for NIEM (National Information Exchange Model) that allows customers to search and download JSON schemas for over 10,000 objects in the model database. The web application back-end ingested XML Schema Definitions (XSDs) via Apache Solr to allow the Angular front-end to search, filter, and retrieve data via APIs. The Node back-end returns the converted JSON schemas for queried elements, allowing customers to prepare for the future of NIEM using modern data structures.',
+    'url': 'https://beta.movement.niem.gov',
     'image': 'niem.png',
     'skills': [
       'HTML',
@@ -40,6 +42,14 @@
       'JavaScript',
       'Angular 1.3',
       'Apache Solr',
+      'Docker',
+      'Docker Registry',
+      'Jenkins',
+      'AWS EC2',
+      'AWS IAM',
+      'AWS S3',
+      'nginx',
+      'Bash Scripts',
       'XML / XSD / XPath',
       'Karma / Jasmine',
       'JSDoc',
