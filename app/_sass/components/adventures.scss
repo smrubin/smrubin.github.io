@@ -42,14 +42,15 @@
       align-items: center;
       width: 25%;
       max-width: 225px;
+      max-height: 225px;
       position: relative;
 
       &:first-of-type {
         &:after {
           @include scrabble-tile('DOUBLE WORD SCORE', #F2B4A9);
-          height: calc(100% - 6px);
-          width: calc(100% - 3px);
-          left: calc(-100% + 3px);
+          height: calc(100% - 2px);
+          width: calc(100% - 2px);
+          left: calc(-100% + 1px);
           top: 2px;
         }
       }
@@ -58,9 +59,9 @@
         &:after {
           @include scrabble-tile('TRIPLE LETTER SCORE', #5CAECE);
           height: calc(100% - 6px);
-          width: calc(100% - 3px);
+          width: calc(100% - 2px);
           top: calc(-100% + 6px);
-          left: 3px;
+          left: 1px;
         }
       }
 
@@ -68,9 +69,12 @@
         &:after {
           @include scrabble-tile('DOUBLE LETTER SCORE', #B6E1EA);
           height: calc(100% - 6px);
-          width: calc(100% - 3px);
-          top: calc(100% - 6px);
-          left: calc(-100% + 3px);
+          width: calc(100% - 2px);
+          top: calc(100% + 2px);
+          left: calc(-100% + 1px);
+          @include mobile {
+            top: calc(100% - 6px);
+          }
         }
       }
 
@@ -79,8 +83,11 @@
           @include scrabble-tile('TRIPLE LETTER SCORE', #5CAECE);
           height: calc(100% - 6px);
           width: calc(100% - 3px);
-          top: -2px;
+          top: 2px;
           left: 2px;
+          @include mobile {
+            top: -2px;
+          }
         }
       }
 
@@ -89,8 +96,11 @@
           @include scrabble-tile('TRIPLE WORD SCORE', #E45356);
           height: calc(100% - 6px);
           width: calc(100% - 3px);
-          top: calc(100% - 6px);
+          top: calc(100% + 2px);
           left: 2px;
+          @include mobile {
+            top: calc(100% - 6px);
+          }
         }
       }
 
@@ -99,8 +109,11 @@
           @include scrabble-tile('DOUBLE WORD SCORE', #F2B4A9);
           height: calc(100% - 6px);
           width: calc(100% - 3px);
-          left: calc(100% + 3px);
-          top: -2px;
+          left: calc(100% + 2px);
+          top: 2px;
+          @include mobile {
+            top: -2px;
+          }
         }
       }
     }
@@ -110,15 +123,19 @@
       margin: 8px;
       padding: 10px;
       box-shadow: 0 1.125mm 0.75mm -0.5mm rgba(0, 0, 0, 0.4);
-      border-top: 0.75mm solid rgba(255, 255, 255, 0.45);
       border-left: 1px solid rgba(255, 255, 255, 0.25);
       border-right: 1px solid rgba(0, 0, 0, 0.15);
-      border-bottom: 1.25mm solid rgba(0, 0, 0, 0.3);
-      border-radius: 0.75mm;
+      border-bottom: 4px solid rgba(0, 0, 0, 0.3);
+      border-top: 2px solid rgba(255, 255, 255, 0.45);
+      border-radius: 3px;
       z-index: 1;
+      width: calc(100% - 20px - 2px - 16px);
+      height: calc(100% - 20px - 6px - 16px);
 
       @include mobile {
         padding: 4px;
+        width: calc(100% - 8px - 2px - 16px);
+        height: calc(100% - 8px - 6px - 16px);
       }
     }
   }

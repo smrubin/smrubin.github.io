@@ -56,9 +56,9 @@
     &-back {
       @extend .home-skills-card;
       background-image:
-      radial-gradient($midnight-blue 9px, transparent 10px),        
-      repeating-radial-gradient($midnight-blue 0, $midnight-blue 4px, transparent 5px, transparent 20px, $midnight-blue 21px, $midnight-blue 25px, transparent 26px, transparent 50px);    
-      background-size: 32px 32px, 96px 96px; 
+      radial-gradient($midnight-blue 9px, transparent 10px),
+      repeating-radial-gradient($midnight-blue 0, $midnight-blue 4px, transparent 5px, transparent 20px, $midnight-blue 21px, $midnight-blue 25px, transparent 26px, transparent 50px);
+      background-size: 32px 32px, 96px 96px;
       background-position: 0 0;
       border: 10px solid $pillow-grey;
       height: calc(46px * 8 - 4px);
