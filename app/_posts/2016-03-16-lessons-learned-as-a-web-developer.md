@@ -3,10 +3,6 @@ layout: post
 title: "Lessons Learned as a Web Developer"
 date: 2016-03-09
 author: Sam Rubin
-img: lessons-learned-as-a-web-developer.jpg
-featured: true
-comments: true
-keywords: "lessons, learned, developer, web, themes, starting, development, 2016, tools, resources, knowledge, rubin, sam"
 description: "Reflecting on my career as a web developer, I have learned many lessons and themes across the web design and development domains. I've learned about what works and what doesn't, how to interact with clients, the amazing tools and resources that are out there (many of which are open-source), and lessons that I am constantly reminding myself of."
 ---
 
