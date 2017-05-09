@@ -1,44 +1,50 @@
 ---
-layout: default
-title: Blog
+layout: page
 ---
 
-<section>
-    <div class="section-content">
-        <div class="page-header">
-            <h1>{{page.title}} <small>Jotting down my thoughts</small></h1>
-        </div>
-        {% for post in paginator.posts %}
-        <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
-            <div class="container-fluid">
-                <div class="row port-object">
-                    <div class="col-md-4">
-                        <img class="img-resp" src="{{site.baseurl}}/assets/img/blog/{{post.img}}" alt="">
-                    </div>
-                    <div class="col-md-8">
-                        <h2 class="article-title"><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">{{post.title}}</a></h2>
-                        <time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time>
-                        <p>{{post.excerpt | strip_html}}</p>
-                        <a href="{{site.baseurl}}{{post.url}}" title="read more">Read more</a>
-                    </div>
-                </div>
-            </div>
-        </article>
-        {% endfor %}
+<main class="content" role="main">
 
-        <div class="pagination">
-            {% if paginator.previous_page %}
-            {% if paginator.previous_page == 1 %}
-            <p class="prevLink left"><a href="{{site.baseurl}}/blog/index.html" class="previous"><i class="fa fa-arrow-left pad-right" aria-hidden="true"></i>newer entries</a></p>
-            {% else %}
-            <p class="prevLink left"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous"><i class="fa fa-arrow-left pad-right" aria-hidden="true"></i>newer entries</a></p>
-            {% endif %}
-            {% endif %}
-            {% if paginator.next_page %}
-            <p class="nextLink right"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">older entries<i class="fa fa-arrow-right pad-left" aria-hidden="true"></i></a></p>
-            {% endif %}
-            <div style="clear: both;"></div>
-        </div>
+  <header class="blog-header">
+      <h1 class="blog-title">{{ site.title }}</h1>
+      <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
 
-    </div>
-</section>
+  <div class="cf frame">
+    {% for post in paginator.posts %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <nav class="pagination" role="navigation">
+    {% if paginator.next_page %}
+      <a class="newer-posts" href="{{ site.baseurl }}/page{{paginator.next_page}}">&larr; Older posts</a>
+    {% else %}
+      <a class="newer-posts disabled">&larr; Older posts</a>
+    {% endif %}
+    <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.previous_page %}
+      {% if paginator.page == 2 %}
+        <a class="older-posts" href="{{ site.baseurl }}/">Newer posts &rarr;</a>
+      {% else %}
+        <a class="older-posts" href="{{ site.baseurl }}/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+      {% endif %}
+    {% else %}
+      <a class="older-posts disabled">Newer posts &rarr;</a>
+    {% endif %}
+  </nav>
+
+</main>
+
+{% include footer.html %}

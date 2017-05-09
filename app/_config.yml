@@ -1,5 +1,5 @@
 # Site settings
-title: Sam Rubin | Web Developer
+title: Sam Rubin | Software Engineer
 description: "The personal and professional website of Sam Rubin, a full stack software engineer located in Arlington, Virginia."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://samrubin.co" # the base hostname & protocol for your site; added https protocol
@@ -23,6 +23,19 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   auto_ids: false
+  parse_block_html: true
 permalink: /blog/:title
 paginate: 6
 paginate_path: '/blog/page:num/'
+
+
+# Blog post attrs
+logo: "/assets/img/logo/logo-orig.png"
+name: 'Sam Rubin'
+bio: "A full stack software engineer located in Arlington, Virginia"
+author_image: "/assets/img/me.jpg"
+twitter_username: sammrubin
+github_username:  smrubin
+
+# Google Analytics
+analytics_id: ""
