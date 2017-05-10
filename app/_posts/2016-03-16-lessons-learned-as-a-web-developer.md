@@ -2,8 +2,6 @@
 layout: post
 title: "Lessons Learned as a Web Developer"
 date: 2016-03-09
-author: Sam Rubin
-description: "Reflecting on my career as a web developer, I have learned many lessons and themes across the web design and development domains. I've learned about what works and what doesn't, how to interact with clients, the amazing tools and resources that are out there (many of which are open-source), and lessons that I am constantly reminding myself of."
 ---
 
 When I created my first website back in 2012, it was a struggle, to say the least. I had no idea what I was doing, and must have spent more time trying to create that simple forum website than I do on a lot of my projects currently. Since then, I have learned a lot. I've learned about what works and what doesn't, how to interact with clients, the amazing tools and resources that are out there (many of which are open-source), and lessons that I am constantly reminding myself of.

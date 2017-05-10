@@ -116,9 +116,10 @@ layout: default
       <div class="home-blog-header-box">Blog</div>
       <div class="row">
         <div class="home-blog-posts">
-          {% for post in site.posts %}
+          {% for post in site.posts limit:6 %}
           <div class="home-blog-post"><a href="{{site.baseurl}}{{post.url}}">{{post.title}}</a></div>
           {% endfor %}
+          <div class="home-blog-post"><a href="{{site.baseurl}}/blog">See More</a></div>
         </div>
       </div>
     </div>
@@ -218,7 +219,7 @@ layout: default
                 <p class="home-impossible-issue-title">{{ ticket.title }}</p>
               </div>
               <div class="home-impossible-issue-assignee">
-                <img src="assets/img/me - Copy.jpg" alt="Sam Rubin">
+                <img src="assets/img/me.jpg" alt="Sam Rubin">
               </div>
               <div class="home-impossible-issue-epic">{{ ticket.epic }}</div>
               <div class="home-impossible-issue-estimate">{{ ticket.estimate }}</div>
