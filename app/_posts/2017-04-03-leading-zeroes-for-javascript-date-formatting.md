@@ -8,7 +8,7 @@ If you've ever messed around with JavaScript Dates, especially formatting, you k
 
 Here are some of the useful Date methods in JavaScript that you are probably most familiar with:
 
-```
+```javascript
 let d = new Date("October 13, 2016 11:13:03");
 console.log(d.getDate()); // 13
 console.log(d.getMonth()); // 9
@@ -25,7 +25,7 @@ With these six methods, you virtually have access to the Month, Day, Year, Hour,
 
 The reason I bring this up is because I frequently am requested to include leading zeroes for all of the date and time variables. Suppose we want the output: MMDDYYYY_HHMMSS. Your first thought may be to string together a solution like:
 
-```
+```javascript
 let d = new Date("February 3, 2016 04:08:03");
 let dDate = [d.getMonth() + 1, d.getDate(), d.getFullYear()].join('');
 let dTime = [d.getHours(), d.getMinutes(), d.getSeconds()].join('');
@@ -36,7 +36,7 @@ This solution will validate, and for our example will output `232016_483`. You c
 
 So how can we include leading zeroes? A simple approach might be to use if or ternary statements to check if the returned number is less than 10.
 
-```
+```javascript
 let d = new Date("October 13, 2016 11:13:03");
 let min = d.getMinutes();
 let sec = d.getSeconds();
@@ -46,7 +46,7 @@ if (sec < 10) { sec = '0' + sec; }
 
 This solution works, but I find that it starts to become a lot of if or ternary statements quickly. Another neat solution is to automatically concatenate a leading zero to each date-time variable (except year) and then take advantage of the String.prototype.slice() method to grab only the last two characters of the string. The solution could look something like:
 
-```
+```javascript
 let d = new Date("February 3, 2016 04:08:03");
 let dDate = [('0' + (d.getMonth() + 1)).slice(-2), ('0' + d.getDate()).slice(-2), d.getFullYear()].join('');
 let dTime = [('0' + d.getHours()).slice(-2), ('0' + d.getMinutes()).slice(-2), ('0' + d.getSeconds()).slice(-2)].join('');
