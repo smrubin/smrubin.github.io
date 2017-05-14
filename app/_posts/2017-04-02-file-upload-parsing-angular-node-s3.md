@@ -190,3 +190,10 @@ function uploadFiles(files) {
 After you get the file's form data, you can do whatever you want with it (keep in mind that it is in an object from our createSimpleKeyValue method above)- write it to a database, check field values, etc.
 
 In conclusion, this is a nice setup for a quick implementation of file uploading, parsing, and storing of both the document and the form data (if you choose to write it to a database). Although I like to hand-roll a lot of functionality, the libraries used in this project (ng-file-upload, multer, HummusJS, and the AWS SDK) make performing these operations a lot easier. Hopefully, this guide can be expanded upon in the future to provide even more functionality for document upload and PDF form parsing.
+
+For reference:
+* [Ng-file-upload](https://github.com/danialfarid/ng-file-upload)
+* [FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData)
+* [multer]( https://github.com/expressjs/multer)
+* [AWS Node SDK](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html)
+* [HummusJS](https://github.com/galkahana/HummusJS)
