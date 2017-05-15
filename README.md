@@ -1,6 +1,6 @@
-# A custom-built personal and professional website built on Jekyll and Skeleton.
+# A custom-built personal and professional website, includes a fully customized home page with VRView and a blog powered by Google AMP. Made with Jekyll, Skeleton, and Amplify.
 
-To generate source code for VR view, from app directory run:
+To generate source code for VR view, run:
 ```
 git clone https://github.com/google/vrview
 ```
