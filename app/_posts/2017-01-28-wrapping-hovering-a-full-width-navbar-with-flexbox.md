@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Wrapping a Full Width Navbar with Flexbox"
-date: 2017-04-05
+title: "Wrapping and Hovering a Full Width Navbar with Flexbox"
+date: 2017-01-28
 ---
 
 The other day I was working with a designer and came across an interesting CSS challenge: designing a navbar with the following:

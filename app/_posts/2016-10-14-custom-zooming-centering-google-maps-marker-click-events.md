@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Custom Zooming and Centering on Google Maps Marker Click Events"
-date: 2017-04-04
+date: 2016-10-14
 ---
 
 The Google Maps API makes it easy to integrate map functionality into any web application. But sometimes building out advanced functionality with this API provides challenges, albeit fun ones. In this post we will explore how to create a custom zooming and centering functionality when a user clicks on a map marker using [NgMap](https://ngmap.github.io/). This functionality becomes a little tricky, especially when the markers we want to center lie on an outside edge of our market cluster, because we then have to reset the zoom of the map to show all the markers tidily. But no fear, we will accomplish this with three simple functions.

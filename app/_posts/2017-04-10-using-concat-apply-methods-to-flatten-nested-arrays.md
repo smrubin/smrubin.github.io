@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using the Concat and Apply Methods to Flatten Nested Arrays"
-date: 2017-04-01
+date: 2017-04-10
 ---
 
 When using third-party APIs, or even making complex queries on your own APIs, sometimes data is returned in formats that are not so easy to manipulate. A recent example of this that I came across was a nested array strucutre. I was presented with an array of arrays that looked something along the lines of the following:

@@ -1,7 +1,7 @@
----
+3---
 layout: post
 title: "JavaScript Date Formatting with Leading Zeroes"
-date: 2017-04-03
+date: 2017-03-20
 ---
 
 If you've ever messed around with JavaScript Dates, especially formatting, you know that it is not the simplest thing. Recently, I was looking to log the date and time in a custom format. JavaScript has a lot of awesome Date methods out of the box, but they lack the ability to quickly modify the format to your specific needs.
