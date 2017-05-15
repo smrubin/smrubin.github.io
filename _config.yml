@@ -14,10 +14,6 @@ exclude:
 gems: [jekyll-paginate]
 
 
-# File structure
-destination: ../_site
-
-
 # Build settings
 highlighter: rouge
 markdown: kramdown
