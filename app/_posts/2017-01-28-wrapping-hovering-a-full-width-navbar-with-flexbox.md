@@ -40,6 +40,7 @@ Now let's style it, using SASS:
   padding: 0;
   margin: 0;
   list-style: none;
+  max-width: 300px;
 
   li {
     border-bottom: 2px solid gray;
@@ -54,6 +55,7 @@ Now let's style it, using SASS:
     border-bottom: 2px solid transparent;
     padding: 10px;
     display: inline-block;
+    margin-bottom: -2px;
 
     &:hover {
       border-bottom: 2px solid blue;
@@ -92,7 +94,7 @@ And the SASS styling:
   padding: 0;
   margin: 0;
   list-style: none;
-  justify-content: space-between;
+  max-width: 300px;
 
   &:after {
     content: '';
@@ -117,11 +119,11 @@ And the SASS styling:
 
 As mentioned before, I like this solution a lot more as it doesn't mandate the use of div elements and doesn't force us to offset a margin for the underline. The main difference between this solution and the last is instead of allowing the last element to grow with flex-grow, we instead add an pseudo-element after to the container, now making this pseduo-element the last-child. Because of this we can get the after element to expand the full width on the last row. Finally, we only apply the hover selector to our li elements, and not the after pseudo-element, meaning if a user were to hover in the remaining underlined empty space, nothing would happen (which is what we want)!
 
-Finally, here's a JSFiddle of both of these solutions to compare and play around with:
-* [Solution #1: The Wrapped Div Solution]()
+Finally, here's a CodePen of both of these solutions to compare and play around with:
+* [Solution #1: The Wrapped Div Solution](https://codepen.io/smrubin/pen/BRVPmL)
 * [SOlution #2: The Pseduo-Element :after Solution]()
 
 Flexbox and pseudo-elements make for a lot of fun with playing with different layouts. Here's some more on them:
-* [Pseduo-element :after]()
-* [Flexbox]()
+* [Pseduo-element :after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
+* [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes)
 * [CSS-Tricks Ultimate Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
