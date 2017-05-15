@@ -121,7 +121,7 @@ As mentioned before, I like this solution a lot more as it doesn't mandate the u
 
 Finally, here's a CodePen of both of these solutions to compare and play around with:
 * [Solution #1: The Wrapped Div Solution](https://codepen.io/smrubin/pen/BRVPmL)
-* [SOlution #2: The Pseduo-Element :after Solution]()
+* [Solution #2: The Pseduo-Element :after Solution](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
 
 Flexbox and pseudo-elements make for a lot of fun with playing with different layouts. Here's some more on them:
 * [Pseduo-element :after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
