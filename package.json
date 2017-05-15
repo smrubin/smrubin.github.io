@@ -2,10 +2,7 @@
   "name": "smrubin.github.io",
   "version": "1.0.0",
   "description": "Personal and professional website of Sam Rubin.",
-  "main": "js/main.js",
-  "directories": {
-    "doc": "doc"
-  },
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
