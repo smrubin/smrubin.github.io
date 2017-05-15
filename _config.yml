@@ -35,3 +35,7 @@ github_username:  smrubin
 
 # Google Analytics
 analytics_id: ""
+
+# Sass
+sass:
+  style: compressed
