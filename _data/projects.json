@@ -165,19 +165,5 @@
       'jQuery'
     ],
     'date': 'December 2015'
-  },
-  {
-    'title': 'Fordson Labs',
-    'description': 'A static website for a local hip-hop group out of Richmond, VA.',
-    'url': 'http://fordsonlabs.com/',
-    'image': 'fordsonlabs.png',
-    'skills': [
-      'HTML',
-      'CSS',
-      'JavaScript',
-      'Gulp',
-      'Git'
-    ],
-    'date': 'July 2016'
   }
 ]
