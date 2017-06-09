@@ -26,3 +26,5 @@ git push origin --delete `git branch -r | grep -Eo 'feature.*'`
 ```
 
 The -o flag (option) print only the matched (non-empty) parts of matching lines, with each such part on a separate output line.
+
+More to come!
