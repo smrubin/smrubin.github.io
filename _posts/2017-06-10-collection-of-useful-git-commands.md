@@ -27,4 +27,35 @@ git push origin --delete `git branch -r | grep -Eo 'feature.*'`
 
 The -o flag (option) print only the matched (non-empty) parts of matching lines, with each such part on a separate output line.
 
-More to come!
+
+# Setting up Git Config Defaults d Aliases in .gitconfig
+
+Its nice to improve your Git config to enable you to do fast work on the command line and set up some defaults for performing Git actions. I've been using [this .gitconfig file](https://github.com/smrubin/dotfiles/blob/master/.gitconfig) for a little while, and wanted to share some of my favorite aliases and defaults.
+
+Here are some aliases I use:
+```
+[alias]
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  last = log -1 head
+```
+
+If you're not familiar with aliases, they are pretty straight-forward. I can now run `git co master` instead of `git checkout master`.
+
+I also recommend setting a default remote on the master branch for repos:
+```
+[branch "master"]
+  remote = origin
+  merge = refs/heads/master
+```
+This means when you are pushing from the master branch, the upstream remote is set to origin by default.
+
+To take advantage of these snippets, add them to your .gitconfig in your home directory. You can also find a full version of this file and some other useful config and dotfiles [here](https://github.com/smrubin/dotfiles).
+
+
+More Git stuff to come!!
