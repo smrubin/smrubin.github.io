@@ -88,6 +88,21 @@
     'date': 'November - December 2016'
   },
   {
+    'title': 'Alex Trebot: Jeoardy Chatbot',
+    'description': 'A Jeopardy-style chatbot built for the Mattermost client using jService and api.ai. Alex Trebot can give help and information, ask questions, check your answer validity and format, and show leaderboards and scores.',
+    'url': 'https://bot.api.ai/804067d3-3bac-4e60-9b6e-91288ae97836',
+    'image': 'alextrebot.png',
+    'skills': [
+      'Node',
+      'Express',
+      'api.ai',
+      'Postgres',
+      'Heroku',
+      'Git'
+    ],
+    'date': 'June 2016'
+  },
+  {
     'title': 'U.S. Government Federal Agency',
     'description': 'A custom web portal designed and developed for a U.S. Government Federal Agency&apos;s financial application suite. The final product used cross-origin resource sharing (CORS) to integrate multiple IBM products under one, consistently themed application.',
     'image': 'pro.png',
