@@ -88,7 +88,7 @@
     'date': 'November - December 2016'
   },
   {
-    'title': 'Alex Trebot: Jeoardy Chatbot',
+    'title': 'Alex Trebot: A Jeopardy Chatbot',
     'description': 'A Jeopardy-style chatbot built for the Mattermost client using jService and api.ai. Alex Trebot can give help and information, ask questions, check your answer validity and format, and show leaderboards and scores.',
     'url': 'https://bot.api.ai/804067d3-3bac-4e60-9b6e-91288ae97836',
     'image': 'alextrebot.png',
